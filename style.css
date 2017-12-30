@@ -2,17 +2,20 @@ body{
     background-color: #01000a;
     font-family: monospace;
     color: #fff;
+    transition: 0.5s;
+    line-height: 1.5;
+    font-size: 16px;
 }
 body:after{
 
     content: "";
     background-image: url("images/graphy-dark.png");
-    opacity: 0.5;
+    opacity: 0.43;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
     z-index: -1;   
 }
 .text-orange{
@@ -21,11 +24,25 @@ body:after{
 .nav-link{
 border: 1px dashed transparent;
 
-
+z-index: 99;
 }
 .nav-link:hover{
     color: rgb(172, 119, 5);
     border: 1px dashed #ffc107;
+}
+.hamburger-icon{
+    display: none;
+    color: #ffc107;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    transition: 0.3s;
+    z-index: 99;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
 .blinking-cursor {
@@ -47,3 +64,88 @@ border: 1px dashed transparent;
   .hakaton-heading{
       margin-top: 5%;
   }
+  
+  .btn-prijava:hover{
+    box-shadow: 0px 0px 15px rgb(243, 180, 6);
+    color: #fff;
+  }
+  .orange-line{
+      background-color: #ffc107;
+      width: 60%;
+      float: left;
+      margin-top: -8px;
+      height: 2px;
+  }
+  @keyframes slideDown {
+    0% {
+        transform: translateY(-60%);
+        -webkit-transform: translateY(-60%);
+        -moz-transform: translateY(-60%);
+        -ms-transform: translateY(-60%);
+        -o-transform: translateY(-60%);
+    }
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+}
+.nav-colored {
+    background-color: rgba(0, 0, 0, 0.755);
+}
+
+.nav-transparent {
+    background-color: transparent;
+}
+  /* Prikaz za mobilne telefone */ 
+  @media (max-width: 576px) { 
+    .slogan{
+        display: block;
+    }  
+    .hamburger-icon{
+        display: inline-block;
+    }
+    .hakaton-heading{
+        margin-top: 18%;
+    }
+   }
+   /* Prikaz za tablete i telefone */
+   @media(max-width: 991px) {
+    .mainmenu {
+        z-index: 9996;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        display: none;
+        opacity: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.95);
+        font-size: 25px;
+        animation: fadeIn 0.4s ease-in-out;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        -webkit-animation: fadeIn 0.4s ease-in-out;
+        text-align: center;
+    }
+    .mainmenu a{
+        text-align: center;
+        animation: slideDown 1s;
+        font-size: 26px;
+    }
+    .opacity {
+        opacity: 1;
+    }
+    .hamburger-icon {
+        z-index: 10001;
+    }
+    .mainmenu ul {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+}
