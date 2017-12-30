@@ -1,0 +1,49 @@
+body{
+    background-color: #01000a;
+    font-family: monospace;
+    color: #fff;
+}
+body:after{
+
+    content: "";
+    background-image: url("images/graphy-dark.png");
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+.text-orange{
+
+}
+.nav-link{
+border: 1px dashed transparent;
+
+
+}
+.nav-link:hover{
+    color: rgb(172, 119, 5);
+    border: 1px dashed #ffc107;
+}
+
+.blinking-cursor {
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #ffc107;
+    } 
+  }
+  .hakaton-heading{
+      margin-top: 5%;
+  }
