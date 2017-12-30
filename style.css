@@ -135,11 +135,8 @@ z-index: 99;
     }
     .mainmenu a{
         text-align: center;
-<<<<<<< HEAD
         animation: slideDown 1s;
         font-size: 26px;
-=======
->>>>>>> fc0893ea8c13d69f6af6692554c1a449a40e9288
     }
     .opacity {
         opacity: 1;
