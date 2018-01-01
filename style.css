@@ -99,6 +99,25 @@ z-index: 99;
 .nav-transparent {
     background-color: transparent;
 }
+
+.typewriter {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+  /*  border-right: .15em solid orange; */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 5s steps(40, end);
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  
   /* Prikaz za mobilne telefone */ 
   @media (max-width: 576px) { 
     .slogan{
