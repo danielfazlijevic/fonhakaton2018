@@ -110,7 +110,9 @@ z-index: 99;
     animation: 
       typing 5s steps(40, end);
   }
-  
+  .totype{
+      display: none;
+  }
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }

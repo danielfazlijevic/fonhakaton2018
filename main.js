@@ -18,3 +18,14 @@ window.onscroll = function () {
 
     }
 };
+
+// typer('#headingtotype', {min: 20, max: 350}).back('empty').line({container: '#headingtotype'}); 
+
+typer('.hakaton-heading')
+.pause(300)
+  .line('FON HAKAFON')
+  .back(3)
+  .continue('TON 2017')
+  .back(1)
+  .pause(400)
+  .continue(8);
