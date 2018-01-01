@@ -21,7 +21,7 @@ window.onscroll = function () {
 
 // typer('#headingtotype', {min: 20, max: 350}).back('empty').line({container: '#headingtotype'}); 
 
-typer('.hakaton-heading')
+typer('.hakaton-heading', {min: 20, max: 210})
 .pause(300)
   .line('FON HAKAFON')
   .back(3)
