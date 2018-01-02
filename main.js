@@ -21,11 +21,27 @@ window.onscroll = function () {
 
 // typer('#headingtotype', {min: 20, max: 350}).back('empty').line({container: '#headingtotype'}); 
 
-typer('.hakaton-heading', {min: 20, max: 210})
-.pause(300)
+typer('.hakaton-heading', {min: 100, max: 350})
+.pause(300).
+cursor({block: true})
   .line('FON HAKAFON')
   .back(3)
   .continue('TON 2017')
   .back(1)
   .pause(400)
   .continue(8);
+
+  typer('.stats', {min: 20, max: 350})
+  .pause(500)
+  .line("50 TIMOVA")
+  .pause(200)
+  .continue(' // ')
+  .pause(300)
+  .continue('24 SATI')
+  .pause(300)
+  .continue(' // ')
+  .pause(300)
+  .continue('JEDAN POBEDNIČKI TIN')
+  .pause(300)
+  .back(1)
+  .continue('M');
