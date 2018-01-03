@@ -18,9 +18,7 @@ body:after{
     position: fixed;
     z-index: -1;   
 }
-.text-orange{
 
-}
 .nav-link{
 border: 1px dashed transparent;
 
@@ -68,9 +66,8 @@ z-index: 99;
   }
   .orange-line{
       background-color: #ffc107;
-      width: 8%;
-      float: left;
-      margin-top: -8px;
+      width: 14%;
+    float: left;
       height: 2px;
   }
   
@@ -145,6 +142,42 @@ z-index: 99;
 #console{
     font-size: 70%;
 }
+
+.qna{
+
+}
+.question{
+    border: 1px solid white;
+    border-left-width: 3px;
+}
+.answer{
+    border: 1px solid white;
+    border-left-width: 3px;
+}
+.question:before{
+    content: "P:";
+    color: #ffc107;
+
+}
+.question:after{
+    content: "I";
+    font-size: 3px;
+    position: relative;
+    right: 50%;
+    color: white;
+    top: 20px;
+    padding: 9px 0 4px 0;
+    height: 9px;
+    background-color: white;
+}
+.answer{
+    margin-left: 15px;
+}
+.answer:before{
+    content: "O:";
+    color: #ffc107;
+}
+
   /* Prikaz samo za kompjutere */ 
   @media (min-width: 992px) { 
     .jumbo{

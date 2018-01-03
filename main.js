@@ -27,6 +27,7 @@ content.style.display = "flex";
 // typer('#headingtotype', {min: 20, max: 350}).back('empty').line({container: '#headingtotype'}); 
 
 typer('.hakaton-heading', {min: 100, max: 350})
+.listen('loadingend')
 .pause(300).
 cursor({block: true})
   .line('FON HAKAFON')
@@ -49,7 +50,8 @@ cursor({block: true})
   .continue('JEDAN POBEDNIČKI TIN')
   .pause(300)
   .back(1)
-  .continue('M');
+  .continue('M')
+  .end();
 
 typer('.loadingtext', {min: 5, max: 25})
 .back('all')
@@ -60,11 +62,11 @@ typer('.loadingtext', {min: 5, max: 25})
 .continue('.')
 .pause(200)
 .continue('.')
-.emit('loadingend')
+.emit('loadingtextend')
 .end();
 
 typer('#console',{min: 5,max: 22})
-.listen('loadingend')
+.listen('loadingtextend')
 .line("sudo -v initialize hackathon")
 .line("[sudo]Password for root: *******")
 .line("Entry is allowed.")
@@ -76,4 +78,5 @@ typer('#console',{min: 5,max: 22})
 .line("Partners: SBB ")
 .line("Loading complete.")
 .pause(500)
+.emit('loadingend')
 .end(hideLoading);
