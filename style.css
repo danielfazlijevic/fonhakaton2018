@@ -136,7 +136,15 @@ z-index: 99;
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
 }
-
+.loading{
+ 
+}
+.loadedcontent{
+    display: none;
+}
+#console{
+    font-size: 70%;
+}
   /* Prikaz samo za kompjutere */ 
   @media (min-width: 992px) { 
     .jumbo{

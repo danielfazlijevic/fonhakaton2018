@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="rs">
 
 <head>
     <meta charset="UTF-8">
@@ -10,93 +10,114 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/typer-js/typer.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/typer-js/typer.css">
+   
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg w-100 ">
-        <a class="navbar-brand text-warning" href="#">
-            FONH LOGO
-        </a>
+    <div class="loading">
+        <div class="container">
 
-        <span class='hamburger-icon' onClick="toggleMenu()">
-            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-        </span>
-
-
-        <div class="collapse navbar-collapse justify-content-end mainmenu" id="menu">
-            <ul class="navbar-nav cl-effect-1">
-                <li class="nav-item slideDown">
-                    <a class="nav-link h5 mx-3 text-warning" href="#"> PRIJAVI SE </a>
-
-                </li>
-                <li class="nav-item slideDown">
-                    <a class="nav-link h5 mx-3 text-warning" href="#"> O PROJEKTU </a>
-                </li>
-                <li class="nav-item slideDown">
-                    <a class="nav-link h5 mx-3 text-warning" href="#"> VESTI </a>
-                </li>
-                <li class="nav-item slideDown text-warning">
-                    <a class="nav-link h5 mx-3 text-warning" href="#"> KONTAKT </a>
-                </li>
-
-
-            </ul>
-
-
-        </div>
-    </nav>
-<div class="container main">
-<div class="jumbo">
-
-    <h1 class="display-5 text-warning hakaton-heading pt-5" id="headingtotype"></h1>
-    
-  
-    <small class="text-muted slogan h4"> Dream IT, Do IT</small>
-    <h3>Da li ste spremni za najbolju avanturu ikada?</h3>
-    <h3>Mi verujemo da jeste. </h3>
-    <button class="btn btn-prijava btn-lg bg-warning mx-auto d-block m-5">PRIJAVI SVOJU EKIPU <i class="fa fa-angle-right" aria-hidden="true"></i></button>
-    
-</div>
-<div class="about">
-    <h2 class="text-warning"><b>O HAKATONU</b></h2>
-    <hr class='orange-line'/> <br>
-    <p class="text-warning h5 stats"></p>
-    <p class="">  Na Hakatonu će odabrane ekipe od tri do četiri člana imati priliku da svoje programerske veštine spoje sa 
-        kreativnošću u pokušaju da osmisle najbolje rešenje koje ima realnu primenu u stvarnom svetu i može pomoći u promeni
-         svesti ljudi. Takmičari će tokom 24 sata uz pomoć mentora razvijati aplikacije iz oblasti održivosti 
-         korišćenjem tehnologije po izboru. Koncept održivog razvoja predstavlja novu strategiju i filozofiju društvenog razvoja.</p>
-        <p>Udruženje studenata informatike "FONIS" i Istraživačko – razvojni centar Fakulteta organizacionih nauka u saradnji sa kompanijom SBB 
-            organizuju četvrti po redu FON Hakaton. Projekat će se ove godine sastojati iz dva dela, tradicionalnog programerskog 
-            takmičenja - Hakatona i novog takmičenja u osmišljavanju inovacija – Tech Challenge-a.</p>
-            <p class='mb-4'>   FON Hakaton omogućava svim učesnicima da steknu iskustvo koje će im biti od velikog značaja za napredak u budućoj karijeri,
-                 a najboljima će biti dodeljene i vredne nagrade. Prijave su po prvi put otvorene za sve mlade od 16 do 26 godina iz Srbije i
-                  regiona i zatvaraju se 26. marta u ponoć. Postojaće dve prijave, jedna za Hakaton i druga za Tech challenge. 
-                  Takmičenje će se održati 31. marta i 1. aprila u prostorijama Istraživačko – 
-                  razvojnog centra Fakulteta organizacionih nauka. Prezentacija završnih aplikacija timova održaće se 1. aprila od 18 časova, 
-                  nakon čega sledi svečana dodela nagrada.</p>
-                  <div class="row m-2 justify-content-center text-center">
-                        <div class="col-sm m-1">
-                            <h3>Partner</h3>
-                            <img class="partners-img" src="http://hakaton.fonis.rs/img/sbb_logo_white.png" alt="">
-                        </div>
-                        <div class="col-sm m-1">
-                            <h3>Organizatori</h3>
-                                <img class="partners-img m-3" src="http://hakaton.fonis.rs/img/Fonislogo-1.png" alt="">
-                                <img class="partners-img m-3" src="http://hakaton.fonis.rs/img/logoIRCmali.png" alt="">
-                            </div>
-                            <div class="col-sm m-1">
-                                <h3>Domacin</h3>
-                                    <img class="partners-img m-3" src="http://hakaton.fonis.rs/img/fon-logo.png" alt="">
-                                </div>
-                   
-                    </div>
+            <h2 class="display-2 mt-5 text-warning loadingtext"></h2>
+            <div id="console"></div>
             
         </div>
-</div>
-<script src="https://unpkg.com/typer-js"></script>
-<script src="main.js"></script>
+    </div>
+    <div class="loadedcontent">
+
+
+        <nav class="navbar navbar-expand-lg w-100 ">
+            <a class="navbar-brand text-warning" href="#">
+                FONH LOGO
+            </a>
+
+            <span class='hamburger-icon' onClick="toggleMenu()">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </span>
+
+
+            <div class="collapse navbar-collapse justify-content-end mainmenu" id="menu">
+                <ul class="navbar-nav cl-effect-1">
+                    <li class="nav-item slideDown">
+                        <a class="nav-link h5 mx-3 text-warning" href="#"> PRIJAVI SE </a>
+
+                    </li>
+                    <li class="nav-item slideDown">
+                        <a class="nav-link h5 mx-3 text-warning" href="#"> O PROJEKTU </a>
+                    </li>
+                    <li class="nav-item slideDown">
+                        <a class="nav-link h5 mx-3 text-warning" href="#"> VESTI </a>
+                    </li>
+                    <li class="nav-item slideDown text-warning">
+                        <a class="nav-link h5 mx-3 text-warning" href="#"> KONTAKT </a>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+        </nav>
+        <div class="container main">
+            <div class="jumbo">
+
+                <h1 class="display-5 text-warning hakaton-heading pt-5" id="headingtotype"></h1>
+
+                <small class="text-muted slogan h4"> Dream IT, Do IT</small>
+                <h3>Da li ste spremni za najbolju avanturu ikada?</h3>
+                <h3>Mi verujemo da jeste. </h3>
+                <button class="btn btn-prijava btn-lg bg-warning mx-auto d-block m-5">PRIJAVI SVOJU EKIPU
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
+
+            </div>
+
+            <div class="about">
+                <h2 class="text-warning">
+                    <b>O HAKATONU</b>
+                </h2>
+                <hr class='orange-line' />
+                <br>
+                <p class="text-warning h5 stats"></p>
+                <p class=""> Na Hakatonu će odabrane ekipe od tri do četiri člana imati priliku da svoje programerske veštine spoje sa
+                    kreativnošću u pokušaju da osmisle najbolje rešenje koje ima realnu primenu u stvarnom svetu i može pomoći
+                    u promeni svesti ljudi. Takmičari će tokom 24 sata uz pomoć mentora razvijati aplikacije iz oblasti održivosti
+                    korišćenjem tehnologije po izboru. Koncept održivog razvoja predstavlja novu strategiju i filozofiju
+                    društvenog razvoja.</p>
+                <p>Udruženje studenata informatike "FONIS" i Istraživačko – razvojni centar Fakulteta organizacionih nauka u
+                    saradnji sa kompanijom SBB organizuju četvrti po redu FON Hakaton. Projekat će se ove godine sastojati
+                    iz dva dela, tradicionalnog programerskog takmičenja - Hakatona i novog takmičenja u osmišljavanju inovacija
+                    – Tech Challenge-a.</p>
+                <p class='mb-4'> FON Hakaton omogućava svim učesnicima da steknu iskustvo koje će im biti od velikog značaja za napredak u
+                    budućoj karijeri, a najboljima će biti dodeljene i vredne nagrade. Prijave su po prvi put otvorene za
+                    sve mlade od 16 do 26 godina iz Srbije i regiona i zatvaraju se 26. marta u ponoć. Postojaće dve prijave,
+                    jedna za Hakaton i druga za Tech challenge. Takmičenje će se održati 31. marta i 1. aprila u prostorijama
+                    Istraživačko – razvojnog centra Fakulteta organizacionih nauka. Prezentacija završnih aplikacija timova
+                    održaće se 1. aprila od 18 časova, nakon čega sledi svečana dodela nagrada.</p>
+                <div class="row m-2 justify-content-center text-center">
+                    <div class="col-sm m-1">
+                        <h3>Partner</h3>
+                        <img class="partners-img" src="http://hakaton.fonis.rs/img/sbb_logo_white.png" alt="">
+                    </div>
+                    <div class="col-sm m-1">
+                        <h3>Organizatori</h3>
+                        <img class="partners-img m-3" src="http://hakaton.fonis.rs/img/Fonislogo-1.png" alt="">
+                        <img class="partners-img m-3" src="http://hakaton.fonis.rs/img/logoIRCmali.png" alt="">
+                    </div>
+                    <div class="col-sm m-1">
+                        <h3>Domacin</h3>
+                        <img class="partners-img m-3 bg-white p-2" src="http://hakaton.fonis.rs/img/fon-logo.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typer-js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
