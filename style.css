@@ -1,6 +1,7 @@
 body{
     background-color: #01000a;
-    font-family: monospace;
+   font-family: 'Anonymous Pro', monospace; 
+    
     color: #fff;
     transition: 0.5s;
     line-height: 1.5;
@@ -39,7 +40,13 @@ z-index: 99;
     position: relative;
     display: inline-block;
 }
-
+.about a{
+    color:  #ffc107;
+}
+.about a:hover{
+background-color:  #ffc107;
+color: #fff;
+}
 .blinking-cursor {
     -webkit-animation: 1s blink step-end infinite;
     -moz-animation: 1s blink step-end infinite;
@@ -148,11 +155,13 @@ z-index: 99;
 }
 .question{
     border: 1px solid white;
-    border-left-width: 3px;
+    border-left-width: 4px;
+   
 }
 .answer{
-    border: 1px solid white;
-    border-left-width: 3px;
+    border:1px solid white;
+    border-left-width: 4px;
+  
 }
 .question:before{
     content: "P:";
@@ -176,6 +185,9 @@ z-index: 99;
 .answer:before{
     content: "O:";
     color: #ffc107;
+}
+h2{
+    font-family: 'Audiowide', cursive;
 }
 
   /* Prikaz samo za kompjutere */ 

@@ -1,3 +1,6 @@
+
+/* DANIEL FAZLIJEVIC, JANUAR 2018. */
+
 var menu = document.querySelector('#menu');
 var myNav = document.querySelector('.navbar');
 const loading = document.querySelector('.loading');
@@ -32,11 +35,10 @@ typer('.hakaton-heading', {min: 100, max: 350})
 cursor({block: true})
   .line('FON HAKAFON')
   .back(3)
-  .continue('TON 2017')
-  .back(1)
-  .pause(400)
-  .continue(8);
+  .continue('TON 2018');
 
+
+  
   typer('.stats', {min: 20, max: 350})
   .pause(500)
   .line("50 TIMOVA")
@@ -80,3 +82,7 @@ typer('#console',{min: 5,max: 22})
 .pause(500)
 .emit('loadingend')
 .end(hideLoading);
+
+if(localStorage.getItem("development")){
+    hideLoading();  
+}
