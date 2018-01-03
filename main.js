@@ -1,5 +1,7 @@
 var menu = document.querySelector('#menu');
 var myNav = document.querySelector('.navbar');
+const loading = document.querySelector('.loading');
+const content = document.querySelector('.loadedcontent');
 
 function toggleMenu() {
     menu.classList.toggle("opacity");
@@ -18,7 +20,10 @@ window.onscroll = function () {
 
     }
 };
-
+function hideLoading(){
+loading.style.display = "none";
+content.style.display = "flex";
+}
 // typer('#headingtotype', {min: 20, max: 350}).back('empty').line({container: '#headingtotype'}); 
 
 typer('.hakaton-heading', {min: 100, max: 350})
@@ -46,7 +51,7 @@ cursor({block: true})
   .back(1)
   .continue('M');
 
-typer('.loadingtext')
+typer('.loadingtext', {min: 5, max: 25})
 .back('all')
 .line('Učitavanje')
 .pause(200)
@@ -54,12 +59,14 @@ typer('.loadingtext')
 .pause(200)
 .continue('.')
 .pause(200)
-.continue('.');
+.continue('.')
+.emit('loadingend')
+.end();
 
-typer('#console',{min: 10,max: 50})
-.pause(500)
+typer('#console',{min: 5,max: 22})
+.listen('loadingend')
 .line("sudo -v initialize hackathon")
-.line("Password: *******")
+.line("[sudo]Password for root: *******")
 .line("Entry is allowed.")
 .line("FON HAKATON 2018 is being initialized...")
 .line("Date: 05/03/2018. Destination set: Belgrade, Serbia")
@@ -67,3 +74,6 @@ typer('#console',{min: 10,max: 50})
 .line("Organized by: FONIS.rs")
 .line("Fun level: MAX")
 .line("Partners: SBB ")
+.line("Loading complete.")
+.pause(500)
+.end(hideLoading);
