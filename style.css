@@ -45,9 +45,9 @@ body:after {
     color: #ffc107;
 }
 
-.about a:hover {
+.about a:hover, .link:hover {
     background-color: #FFCE3D;
-    color: #fff;
+    color: black;
 }
 
 .blinking-cursor {
@@ -67,7 +67,9 @@ body:after {
         color: #ffc107;
     }
 }
-
+.thumbnail img{
+    max-width: 200px;
+}
 .hakaton-heading {
     margin-top: 5%;
 }
@@ -200,7 +202,9 @@ h2 {
 }
 
 
-
+.text-muted2{
+    color: #3b3b3b60;
+}
 /* Prikaz samo za kompjutere */
 
 @media (min-width: 992px) {
