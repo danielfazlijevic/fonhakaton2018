@@ -1,3 +1,5 @@
+/* PROBNI SAJT by Daniel Fazlijevic, januar 2018. */
+
 body {
     background-color: #01000a;
     font-family: 'Anonymous Pro', monospace;
@@ -45,7 +47,8 @@ body:after {
     color: #ffc107;
 }
 
-.about a:hover, .link:hover {
+.about a:hover,
+.link:hover {
     background-color: #FFCE3D;
     color: black;
 }
@@ -67,9 +70,11 @@ body:after {
         color: #ffc107;
     }
 }
-.thumbnail img{
+
+.thumbnail img {
     max-width: 200px;
 }
+
 .hakaton-heading {
     margin-top: 5%;
 }
@@ -150,7 +155,6 @@ body:after {
     transform: translateX(0px);
 }
 
-
 .loadedcontent {
     display: none;
 }
@@ -158,7 +162,6 @@ body:after {
 #console {
     font-size: 70%;
 }
-
 
 .question {
     border: 1px solid #C9B800;
@@ -201,10 +204,11 @@ h2 {
     font-family: monospace;
 }
 
-
-.text-muted2{
+.text-muted2 {
     color: #3b3b3b60;
 }
+
+
 /* Prikaz samo za kompjutere */
 
 @media (min-width: 992px) {
