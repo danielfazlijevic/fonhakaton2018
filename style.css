@@ -167,6 +167,7 @@ body:after {
     border: 1px solid #C9B800;
     border-left-width: 4px;
     font-size: 105%;
+    background-color: #C9B800;
 }
 
 .answer {
