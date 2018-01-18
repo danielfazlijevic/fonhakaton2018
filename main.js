@@ -94,9 +94,11 @@ typer('#console', {
     .line("Partners: SBB ")
     .line("Loading complete.")
     .pause(500)
-    .emit('loadingend')
-    .end(hideLoading);
+    .emit('loadingend');
+  /*  .end(hideLoading); */
 
+    /*
 if (localStorage.getItem("development")) {
     hideLoading();
 }
+*/

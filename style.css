@@ -159,6 +159,7 @@ body:after {
     display: none;
 }
 
+
 #console {
     font-size: 70%;
 }
@@ -209,6 +210,34 @@ h2 {
     color: #3b3b3b60;
 }
 
+
+/* TEST CSS */
+
+.new-loading{
+    background-image: url("images/galaxy.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+.rocket{
+    position: fixed;
+    bottom: 33%;
+    right: 10%;
+    width: 470px;
+    height: auto;
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        z-index: 1;
+}
+.loading-text{
+        font-size: 23px;
+        padding-top: 5%;
+        z-index: 40;
+}
 
 /* Prikaz samo za kompjutere */
 
@@ -267,4 +296,9 @@ h2 {
         margin: 0 auto;
         max-width: 400px;
     }
+    .rocket{
+        bottom: 3%;
+        
+    }
 }
+
