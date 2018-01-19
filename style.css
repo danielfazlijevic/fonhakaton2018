@@ -1,5 +1,9 @@
 /* PROBNI SAJT by Daniel Fazlijevic, januar 2018. */
 
+:root {
+    --color-purple: #4b00d6;
+}
+
 body {
     background-color: #01000a;
     font-family: 'Anonymous Pro', monospace;
@@ -28,7 +32,7 @@ body:after {
 
 .hamburger-icon {
     display: none;
-    color: #ffc107;
+    color: var(--color-purple);
 }
 
 .navbar {
@@ -38,54 +42,31 @@ body:after {
     z-index: 99;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
 .about a {
-    color: #ffc107;
+    color: var(--color-purple);
 }
 
 .about a:hover,
 .link:hover {
-    background-color: #FFCE3D;
+    background-color: rgb(161, 61, 255);
     color: black;
-}
-
-.blinking-cursor {
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    -ms-animation: 1s blink step-end infinite;
-    -o-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
-}
-
-@keyframes blink {
-    from,
-    to {
-        color: transparent;
-    }
-    50% {
-        color: #ffc107;
-    }
 }
 
 .thumbnail img {
     max-width: 200px;
 }
 
-.hakaton-heading {
-    margin-top: 5%;
+.btn-prijava {
+    background-color: var(--color-purple);
 }
 
 .btn-prijava:hover {
-    box-shadow: 0px 0px 15px rgb(243, 180, 6);
+    box-shadow: 0px 1px 20px rgb(115, 30, 250);
     color: #fff;
 }
 
 .orange-line {
-    background-color: #ffc107;
+    background-color: var(--color-purple);
     width: 14%;
     float: left;
     height: 2px;
@@ -106,14 +87,6 @@ body:after {
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
     }
-}
-
-.nav-colored {
-    background-color: rgba(0, 0, 0, 0.95);
-}
-
-.nav-transparent {
-    background-color: transparent;
 }
 
 .partners-img {
@@ -159,7 +132,6 @@ body:after {
     display: none;
 }
 
-
 #console {
     font-size: 70%;
 }
@@ -178,7 +150,7 @@ body:after {
 
 .question:before {
     content: " P: ";
-    color: #ffc107;
+    color: var(--color-purple);
 }
 
 .question:after {
@@ -210,34 +182,67 @@ h2 {
     color: #3b3b3b60;
 }
 
+.logo {
+    width: 300px;
+}
+
+.nav-colored {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.nav-transparent {
+    background-color: transparent;
+}
+
 
 /* TEST CSS */
 
-.new-loading{
+.new-loading {
     background-image: url("images/galaxy.jpg");
     width: 100vw;
     height: 100vh;
     background-size: cover;
 }
-.rocket{
+
+.rocket {
     position: fixed;
     bottom: 33%;
     right: 10%;
     width: 470px;
     height: auto;
     -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
-        z-index: 1;
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    z-index: 1;
 }
-.loading-text{
-        font-size: 23px;
-        padding-top: 5%;
-        z-index: 40;
+
+.loading-text {
+    font-size: 23px;
+    padding-top: 5%;
+    z-index: 40;
 }
+
+.jumbo {
+    background-image: url('images/galaksija-min.png');
+    background-size: cover;
+    width: 100vw;
+    padding-left: 200px;
+    height: 600px;
+    /* parralax efekat
+   background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  */
+}
+
+.text-purple {
+    color: var(--color-purple)!important;
+}
+
 
 /* Prikaz samo za kompjutere */
 
@@ -245,6 +250,9 @@ h2 {
     .jumbo {
         padding-top: 10%;
         padding-bottom: 2%;
+    }
+    .logo {
+        margin-top: -60px;
     }
 }
 
@@ -272,22 +280,16 @@ h2 {
         -webkit-animation: fadeIn 0.4s ease-in-out;
         text-align: center;
     }
-    .slogan {
-        display: block;
+    .jumbo {
+        max-height: 100vh;
     }
     .hamburger-icon {
         display: inline-block;
-    }
-    .hakaton-heading {
-        margin-top: 18%;
     }
     .mainmenu a {
         text-align: center;
         animation: slideDown 1s;
         font-size: 26px;
-    }
-    .opacity {
-        opacity: 1;
     }
     .hamburger-icon {
         z-index: 10001;
@@ -296,9 +298,4 @@ h2 {
         margin: 0 auto;
         max-width: 400px;
     }
-    .rocket{
-        bottom: 3%;
-        
-    }
 }
-
