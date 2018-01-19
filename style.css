@@ -187,7 +187,7 @@ h2 {
 }
 
 .nav-colored {
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 .nav-transparent {
@@ -285,17 +285,21 @@ h2 {
     }
     .hamburger-icon {
         display: inline-block;
+        z-index: 10001;
     }
     .mainmenu a {
         text-align: center;
         animation: slideDown 1s;
         font-size: 26px;
     }
-    .hamburger-icon {
-        z-index: 10001;
+    .opacity {
+         opacity: 1;
     }
     .mainmenu ul {
         margin: 0 auto;
         max-width: 400px;
+    }
+    .logo{
+        margin-top: 1%;
     }
 }
