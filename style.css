@@ -137,20 +137,20 @@ body:after {
 }
 
 .question {
-    border: 1px solid #C9B800;
+    border: 1px solid rgb(115, 30, 250);
     border-left-width: 4px;
     font-size: 105%;
-    background-color: #C9B800;
+    background-color:rgb(115, 30, 250);
 }
 
 .answer {
-    border: 1px solid #9E9100;
+    border: 1px solid rgb(115, 30, 250);
     border-left-width: 4px;
 }
 
 .question:before {
-    content: " P: ";
-    color: var(--color-purple);
+    content: " Q: ";
+    color: white;
 }
 
 .question:after {
@@ -162,7 +162,7 @@ body:after {
     top: 20px;
     padding: 9px 0 4px 0;
     height: 9px;
-    background-color: #C9B800;
+    background-color: rgb(115, 30, 250);
 }
 
 .answer {
@@ -170,8 +170,8 @@ body:after {
 }
 
 .answer:before {
-    content: " O: ";
-    color: #ffc107;
+    content: " A: ";
+    color: white;
 }
 
 h2 {
