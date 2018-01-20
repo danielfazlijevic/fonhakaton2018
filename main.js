@@ -29,7 +29,7 @@ function hideLoading() {
 }
 // typer('#headingtotype', {min: 20, max: 350}).back('empty').line({container: '#headingtotype'}); 
 
-typer('.hakaton-heading', {
+/*typer('.hakaton-heading', {
         min: 100,
         max: 350
     })
@@ -41,7 +41,7 @@ cursor({
     .line('FON HAKAFON')
     .back(3)
     .continue('TON 2018');
-
+*/
 
 
 typer('.stats', {
@@ -95,8 +95,9 @@ typer('#console', {
     .line("Loading complete.")
     .pause(500)
     .emit('loadingend')
-    .end(hideLoading);
+    .end(hideLoading); 
 
+  
 if (localStorage.getItem("development")) {
     hideLoading();
 }
