@@ -307,39 +307,3 @@ h2 {
         margin-top: 1%;
     }
 }
-
-/* Tajmer */
-
-ul#example {
-	list-style: none;	
-	padding: 0;
-	display: block;
-	text-align: center;
-}
-ul#example li {
-	display: inline-block;
-}
-ul#example li span {
-	font-size: 100px;
-	font-weight: 300;
-	line-height: 80px;
-}
-ul#example li.seperator {
-	font-size: 100px;
-	line-height: 70px;
-	vertical-align: top;
-}
-ul#example li p {
-	color: #a7abb1;
-	font-size: 25px;
-}
-
-.timer{
-	font-family: 'Aldrich', sans-serif;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	color: white;
-	font-style: normal;
-	font-size: 12px;
-}
-
