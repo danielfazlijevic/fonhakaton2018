@@ -101,6 +101,7 @@ typer('#console', {
 if (localStorage.getItem("development")) {
     hideLoading();
 }
+<<<<<<< HEAD
 
 /* Tajmer */
 
@@ -232,3 +233,5 @@ $('#example').countdown({
 		alert('Prijava za ovogodišnji FON Hakaton je upravo zatvorena!');
 });
 
+=======
+>>>>>>> upstream/master
