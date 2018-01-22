@@ -4,6 +4,7 @@ var menu = document.querySelector('#menu');
 var myNav = document.querySelector('.navbar');
 const loading = document.querySelector('.loading');
 const content = document.querySelector('.loadedcontent');
+const footer = document.querySelector('footer');
 
 function toggleMenu() {
     menu.classList.toggle("opacity");
@@ -26,6 +27,7 @@ window.onscroll = function () {
 function hideLoading() {
     loading.style.display = "none";
     content.style.display = "flex";
+    footer.style.display = "flex";
 }
 // typer('#headingtotype', {min: 20, max: 350}).back('empty').line({container: '#headingtotype'}); 
 
@@ -99,5 +101,5 @@ typer('#console', {
 
   
 if (localStorage.getItem("development")) {
-    hideLoading();
+   //  hideLoading();
 }
