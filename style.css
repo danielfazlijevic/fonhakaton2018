@@ -8,6 +8,8 @@ body {
     background-color: #01000a;
     font-family: 'Anonymous Pro', monospace;
     color: #fff;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     line-height: 1.5;
     font-size: 16px;
@@ -38,6 +40,8 @@ body:after {
 .navbar {
     position: fixed;
     top: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     z-index: 99;
 }
@@ -60,12 +64,16 @@ body:after {
     
     background: #ec008c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#fc6767), to(#ec008c));
+    background: -webkit-linear-gradient(left, #fc6767, #ec008c);
+    background: -o-linear-gradient(left, #fc6767, #ec008c);
     background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
 
 .btn-prijava:hover {
-    box-shadow: 0px 1px 20px rgb(231, 79, 224);
+    -webkit-box-shadow: 0px 1px 20px rgb(231, 79, 224);
+            box-shadow: 0px 1px 20px rgb(231, 79, 224);
     color: #fff;
 }
 
@@ -74,6 +82,23 @@ body:after {
     width: 14%;
     float: left;
     height: 2px;
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+        transform: translateY(-60%);
+        -webkit-transform: translateY(-60%);
+        -moz-transform: translateY(-60%);
+        -ms-transform: translateY(-60%);
+        -o-transform: translateY(-60%);
+    }
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
 }
 
 @keyframes slideDown {
@@ -102,24 +127,27 @@ body:after {
     display: inline-block;
     opacity: 0;
     -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.3s;
+    transition: opacity 0.2s, -webkit-transform 0.3s;
+    -o-transition: transform 0.3s, opacity 0.2s;
     transition: transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s, -webkit-transform 0.3s;
 }
 
 .cl-effect-1 a::before {
     margin-right: 10px;
     content: '[';
     -webkit-transform: translateX(20px);
-    -moz-transform: translateX(20px);
-    transform: translateX(20px);
+    -ms-transform: translateX(20px);
+        transform: translateX(20px);
 }
 
 .cl-effect-1 a::after {
     margin-left: 10px;
     content: ']';
     -webkit-transform: translateX(-20px);
-    -moz-transform: translateX(-20px);
-    transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+        transform: translateX(-20px);
 }
 
 .cl-effect-1 a:hover::before,
@@ -128,8 +156,8 @@ body:after {
 .cl-effect-1 a:focus::after {
     opacity: 1;
     -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    transform: translateX(0px);
+    -ms-transform: translateX(0px);
+        transform: translateX(0px);
 }
 
 .loadedcontent {
@@ -217,11 +245,11 @@ footer{
     right: 10%;
     width: 470px;
     height: auto;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
+    -ms-transform: scaleX(-1);
+        transform: scaleX(-1);
+    -webkit-filter: FlipH;
+            filter: FlipH;
     -ms-filter: "FlipH";
     z-index: 1;
 }
@@ -299,7 +327,8 @@ footer{
     }
     .mainmenu a {
         text-align: center;
-        animation: slideDown 1s;
+        -webkit-animation: slideDown 1s;
+                animation: slideDown 1s;
         font-size: 26px;
     }
     .opacity {
