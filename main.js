@@ -8,7 +8,7 @@ const footer = document.querySelector('footer');
 
 function toggleMenu() {
     menu.classList.toggle("opacity");
-    menu.style.display == "flex" ? menu.style.display = "none" : menu.style.display = "flex";
+    menu.style.display == "block" ? menu.style.display = "none" : menu.style.display = "block";
 }
 
 window.onscroll = function () {
@@ -26,8 +26,8 @@ window.onscroll = function () {
 
 function hideLoading() {
     loading.style.display = "none";
-    content.style.display = "flex";
-    footer.style.display = "flex";
+    content.style.display = "block";
+    footer.style.display = "block";
 }
 // typer('#headingtotype', {min: 20, max: 350}).back('empty').line({container: '#headingtotype'}); 
 
