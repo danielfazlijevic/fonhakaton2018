@@ -101,5 +101,5 @@ typer('#console', {
 
   
 if (localStorage.getItem("development")) {
-     hideLoading();
+    // hideLoading();
 }

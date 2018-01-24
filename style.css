@@ -160,9 +160,6 @@ body:after {
         transform: translateX(0px);
 }
 
-.loadedcontent {
-    display: none;
-}
 
 #console {
     font-size: 70%;
@@ -277,7 +274,25 @@ footer{
 .text-purple {
     color: var(--color-purple)!important;
 }
-
+.loading{
+    z-index: 99999;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    top: 0;
+    background: black;
+}
+.loading:after{
+    content: "";
+    background-image: url("images/graphy-dark.png");
+    opacity: 0.43;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}
 
 /* Prikaz samo za kompjutere */
 
