@@ -306,14 +306,15 @@ footer{
         left: 0;
         background: rgba(0, 0, 0, 0.95);
         font-size: 25px;
-        animation: fadeIn 0.4s ease-in-out;
+        animation: fadeIn 0.4s;
         transition: 1s;
         -webkit-transition: 1s;
         -moz-transition: 1s;
         -ms-transition: 1s;
         -o-transition: 1s;
-        -webkit-animation: fadeIn 0.4s ease-in-out;
+        -webkit-animation: fadeIn 0.4s;
         text-align: center;
+        padding-top: 33%;
     }
     .loadingtext {
         font-size: 2.5rem;
