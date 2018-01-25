@@ -316,7 +316,7 @@ footer{
 .jumbo {
     background-image: url('images/galaksija-min.png');
     background-size: cover;
-    width: 100vw;
+    min-width: 100vw;
     padding-left: 200px;
     height: 600px;
     /* parralax efekat
