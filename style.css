@@ -283,6 +283,32 @@ footer{
   }
   
 
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(9px);
+              filter: blur(9px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(9px);
+              filter: blur(9px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+
 /* TEST CSS */
 
 .new-loading {
@@ -399,8 +425,9 @@ footer{
     }
     .mainmenu a {
         text-align: center;
-        -webkit-animation: slideDown 1s;
-                animation: slideDown 1s;
+        -webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            text-shadow: 0 0 15px var(--color-purple);
         font-size: 26px;
     }
     .opacity {
@@ -411,6 +438,6 @@ footer{
         max-width: 400px;
     }
     .logo{
-        margin-top: 1%;
+    padding-top: 10%;
     }
 }

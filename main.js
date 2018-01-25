@@ -44,7 +44,7 @@ function check() {
 if (check()) {
 typingAnimation();
 } else {
-  alert('Tvoj browser ne podrzava neke funkcije ovog sajta, moguce su greske u prikazivanju. Azuriraj svoj web browser.');
+  alert('Tvoj browser ne podržava neke funkcije ovog sajta, moguće su greške u prikazivanju. Ažuriraj svoj web browser.');
   hideLoading();
 }
 function typingAnimation(){
