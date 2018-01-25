@@ -247,13 +247,67 @@
     <footer>
         <div class="container mt-5">
 
-            FON HAKATON 2018, organized by FONIS.rs, website by FONIS.rs
+            <div class="row">
+
+             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                 <img src="./images/Screenshot1.png" width="200px">
+             </div>
+
+             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <div id="map" style="width:200px;height:180px;background:rgb(247, 247, 242)"></div>
+             </div>
+            
+
+             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">                
+                 <h3>KONTAKT</h3>
+                 <ul class="list-unstyled clear-margins">
+                    <li>FON</li>
+                        <li>Adresa</li>
+                        <li>Telefon 1</li>
+                        <li>Telefon 2</li>
+
+                </ul>  
+             </div>
+
+             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                 <h3>PRATITE NAS NA:</h3>
+<!--Facebook-->
+
+<a type="button" class="btn-floating btn-large btn-fb"><i class="fa fa-facebook"></i></a>
+<!--Twitter-->
+<a type="button" class="btn-floating btn-large btn-tw"><i class="fa fa-twitter"></i></a> 
+<!--Google +-->
+<a type="button" class="btn-floating btn-large btn-gplus"><i class="fa fa-google-plus"></i></a>
+<!--Linkedin-->
+<a type="button" class="btn-floating btn-large btn-li"><i class="fa fa-linkedin"></i></a>
+<!--Instagram-->
+<a type="button" class="btn-floating btn-large btn-ins"><i class="fa fa-instagram"></i></a>
+       
+ </div>
+        </div>
 
         </div>
     </footer>
+    <script>
+            function initMap() {
+              var uluru = {lat: -25.363, lng: 131.044};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: uluru
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+              });
+            }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBThGdej9p6XHw9_4j3Q0h4utbNFp4I2w&callback=initMap">
+          </script>
     <script src="typer-babel-min.js"></script>
     <script src="main.min.js"></script>
     <script src="tilt.js"></script>
+   
 </body>
 
 </html>
