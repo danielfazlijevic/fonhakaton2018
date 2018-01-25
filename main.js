@@ -29,24 +29,26 @@ function hideLoading() {
     content.style.display = "block";
     footer.style.display = "block";
 }
-// typer('#headingtotype', {min: 20, max: 350}).back('empty').line({container: '#headingtotype'}); 
+function check() {
+    "use strict";
 
-/*typer('.hakaton-heading', {
-        min: 100,
-        max: 350
-    })
-    .listen('loadingend')
-    .pause(300).
-cursor({
-        block: true
-    })
-    .line('FON HAKAFON')
-    .back(3)
-    .continue('TON 2018');
-*/
+    if (typeof Symbol == "undefined") return false;
+    try {
+        eval("class Foo {}");
+        eval("var bar = (x) => x+1");
+    } catch (e) { return false; }
 
+    return true;
+}
 
-typer('.stats', {
+if (check()) {
+typingAnimation();
+} else {
+  alert('Tvoj browser ne podrzava neke funkcije ovog sajta, moguce su greske u prikazivanju. Azuriraj svoj web browser.');
+  hideLoading();
+}
+function typingAnimation(){
+    typer('.stats', {
         min: 20,
         max: 350
     })
@@ -99,7 +101,9 @@ typer('#console', {
     .emit('loadingend')
     .end(hideLoading); 
 
+}
+
   
 if (localStorage.getItem("development")) {
-    // hideLoading();
+    hideLoading();
 }
