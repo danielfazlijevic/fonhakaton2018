@@ -322,6 +322,7 @@ padding: 15px;
     
     right: 2%;
 }
+
 /* TEST CSS */
 
 .new-loading {
@@ -425,6 +426,9 @@ padding: 15px;
         -webkit-animation: fadeIn 0.4s;
         text-align: center;
         padding-top: 33%;
+    }
+    .bg-planet{
+        width: 220px;
     }
     .loadingtext {
         font-size: 2.5rem;
