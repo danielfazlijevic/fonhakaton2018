@@ -310,7 +310,18 @@ padding: 15px;
     }
   }
   
-
+.bg-planet{
+    width: 350px;
+    height: auto;
+    z-index: -1;
+    display: inline;
+    position: absolute;
+    opacity: 0.8;
+}
+.planet-right{
+    
+    right: 2%;
+}
 /* TEST CSS */
 
 .new-loading {
