@@ -311,7 +311,7 @@ padding: 15px;
   }
   
 .bg-planet{
-    width: 350px;
+    width: 600px;
     height: auto;
     z-index: -1;
     display: inline;
@@ -428,7 +428,7 @@ padding: 15px;
         padding-top: 33%;
     }
     .bg-planet{
-        width: 220px;
+        width: 360px;
     }
     .loadingtext {
         font-size: 2.5rem;
