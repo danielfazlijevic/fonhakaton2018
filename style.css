@@ -224,7 +224,9 @@ h2 {
 }
 
 footer{
-    display: none;
+    background-color: #181629;
+    margin-top: 10px;
+padding: 15px;
 }
 
 /* TYPER CSS */
@@ -439,5 +441,9 @@ footer{
     }
     .logo{
     padding-top: 10%;
+    }
+
+    .container mt-5>row{
+        background-color: #01000a;
     }
 }
