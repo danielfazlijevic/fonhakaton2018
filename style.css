@@ -425,6 +425,10 @@ padding: 15px;
         text-align: center;
         padding-top: 33%;
     }
+    .first-planet{
+        top: 25%;
+        padding: 60px;
+    }
     .bg-planet{
         width: 360px;
     }
