@@ -1,8 +1,5 @@
 /* PROBNI SAJT by Daniel Fazlijevic, januar 2018. #4b00d6  #9536d4*/
 
-:root {
-    --color-purple: #0176fc;
-}
 
 body {
     background-color: #01000a;
@@ -34,7 +31,7 @@ body:after {
 
 .hamburger-icon {
     display: none;
-    color: var(--color-purple);
+    color: #0176fc;
 }
 
 .navbar {
@@ -47,7 +44,7 @@ body:after {
 }
 
 .about a {
-    color: var(--color-purple);
+    color: #0176fc;
 }
 
 .about a:hover,
@@ -78,7 +75,7 @@ body:after {
 }
 
 .orange-line {
-    background-color: var(--color-purple);
+    background-color: #0176fc;
     width: 14%;
     float: left;
     height: 2px;
@@ -366,7 +363,7 @@ padding: 15px;
 }
 
 .text-purple {
-    color: var(--color-purple)!important;
+    color: #0176fc!important;
 }
 .loading{
     z-index: 99999;
@@ -443,7 +440,7 @@ padding: 15px;
         text-align: center;
         -webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
             animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-            text-shadow: 0 0 15px var(--color-purple);
+            text-shadow: 0 0 15px #0176fc;
         font-size: 26px;
     }
     .opacity {
