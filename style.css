@@ -356,9 +356,7 @@ padding: 15px;
 .jumbo {
     background-image: url('images/galaksija-min.png');
     background-size: cover;
-    min-width: 100vw;
     padding-left: 200px;
-    height: 600px;
     /* parralax efekat
    background-attachment: fixed;
     background-position: center;
@@ -432,9 +430,6 @@ padding: 15px;
     }
     .loadingtext {
         font-size: 2.5rem;
-    }
-    .jumbo {
-        max-height: 100vh;
     }
     .hamburger-icon {
         display: inline-block;
