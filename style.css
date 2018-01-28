@@ -244,13 +244,26 @@ padding: 15px;
     width: 0.9ex;
   }
   .cursor-soft::after {
-    animation: softblink 0.7s infinite;
+    -webkit-animation: softblink 0.7s infinite;
+            animation: softblink 0.7s infinite;
   }
   .cursor-hard::after {
-    animation: hardblink 0.7s infinite;
+    -webkit-animation: hardblink 0.7s infinite;
+            animation: hardblink 0.7s infinite;
   }
   .no-cursor::after {
     content: none;
+  }
+  @-webkit-keyframes softblink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   @keyframes softblink {
     0% {
@@ -261,6 +274,20 @@ padding: 15px;
     }
     100% {
       opacity: 1;
+    }
+  }
+  @-webkit-keyframes hardblink {
+    0% {
+      opacity: 1;
+    }
+    49% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
     }
   }
   @keyframes hardblink {
