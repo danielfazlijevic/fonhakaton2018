@@ -10,6 +10,7 @@ body {
     transition: 0.5s;
     line-height: 1.5;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body:after {
@@ -388,7 +389,8 @@ padding: 15px;
     background-size: cover;
   */
 }
-
+.jumbo-content{
+}
 .text-purple {
     color: #0176fc!important;
 }
