@@ -103,6 +103,8 @@ typer('#console', {
 
 }
 
+window.sr = ScrollReveal();
+sr.reveal('.reveal');
   
 if (localStorage.getItem("development")) {
     hideLoading();
