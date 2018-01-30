@@ -1,16 +1,16 @@
-/* PROBNI SAJT by Daniel Fazlijevic, januar 2018. */
+/* PROBNI SAJT by Daniel Fazlijevic, januar 2018. #4b00d6  #9536d4*/
 
-:root {
-    --color-purple: #4b00d6;
-}
 
 body {
     background-color: #01000a;
     font-family: 'Anonymous Pro', monospace;
     color: #fff;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     line-height: 1.5;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body:after {
@@ -32,18 +32,20 @@ body:after {
 
 .hamburger-icon {
     display: none;
-    color: var(--color-purple);
+    color: #0176fc;
 }
 
 .navbar {
     position: fixed;
     top: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     z-index: 99;
 }
 
 .about a {
-    color: var(--color-purple);
+    color: #0176fc;
 }
 
 .about a:hover,
@@ -57,19 +59,44 @@ body:after {
 }
 
 .btn-prijava {
-    background-color: var(--color-purple);
+    
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#fc6767), to(#ec008c));
+    background: -webkit-linear-gradient(left, #fc6767, #ec008c);
+    background: -o-linear-gradient(left, #fc6767, #ec008c);
+    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 .btn-prijava:hover {
-    box-shadow: 0px 1px 20px rgb(115, 30, 250);
+    -webkit-box-shadow: 0px 1px 20px rgb(231, 79, 224);
+            box-shadow: 0px 1px 20px rgb(231, 79, 224);
     color: #fff;
 }
 
 .orange-line {
-    background-color: var(--color-purple);
+    background-color: #0176fc;
     width: 14%;
     float: left;
     height: 2px;
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+        transform: translateY(-60%);
+        -webkit-transform: translateY(-60%);
+        -moz-transform: translateY(-60%);
+        -ms-transform: translateY(-60%);
+        -o-transform: translateY(-60%);
+    }
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
 }
 
 @keyframes slideDown {
@@ -98,24 +125,27 @@ body:after {
     display: inline-block;
     opacity: 0;
     -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.3s;
+    transition: opacity 0.2s, -webkit-transform 0.3s;
+    -o-transition: transform 0.3s, opacity 0.2s;
     transition: transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s, -webkit-transform 0.3s;
 }
 
 .cl-effect-1 a::before {
     margin-right: 10px;
     content: '[';
     -webkit-transform: translateX(20px);
-    -moz-transform: translateX(20px);
-    transform: translateX(20px);
+    -ms-transform: translateX(20px);
+        transform: translateX(20px);
 }
 
 .cl-effect-1 a::after {
     margin-left: 10px;
     content: ']';
     -webkit-transform: translateX(-20px);
-    -moz-transform: translateX(-20px);
-    transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+        transform: translateX(-20px);
 }
 
 .cl-effect-1 a:hover::before,
@@ -124,13 +154,10 @@ body:after {
 .cl-effect-1 a:focus::after {
     opacity: 1;
     -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    transform: translateX(0px);
+    -ms-transform: translateX(0px);
+        transform: translateX(0px);
 }
 
-.loadedcontent {
-    display: none;
-}
 
 #console {
     font-size: 70%;
@@ -158,7 +185,7 @@ body:after {
     font-size: 3px;
     position: relative;
     right: 50%;
-    color: white;
+    color: rgb(115, 30, 250);
     top: 20px;
     padding: 9px 0 4px 0;
     height: 9px;
@@ -179,7 +206,7 @@ h2 {
 }
 
 .text-muted2 {
-    color: #3b3b3b60;
+    color: rgba(69, 70, 67, 0.6);
 }
 
 .logo {
@@ -194,6 +221,131 @@ h2 {
     background-color: transparent;
 }
 
+footer{
+    margin-top: 10px;
+    padding: 15px;
+}
+
+/* TYPER CSS */
+.typer {
+    position: relative;
+    min-height: 2ex;
+  }
+  .typer::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 0.1em;
+    height: 1.1em;
+    background-color: currentColor;
+    margin-left: 0.1em;
+  }
+  .cursor-block::after {
+    width: 0.9ex;
+  }
+  .cursor-soft::after {
+    -webkit-animation: softblink 0.7s infinite;
+            animation: softblink 0.7s infinite;
+  }
+  .cursor-hard::after {
+    -webkit-animation: hardblink 0.7s infinite;
+            animation: hardblink 0.7s infinite;
+  }
+  .no-cursor::after {
+    content: none;
+  }
+  @-webkit-keyframes softblink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes softblink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes hardblink {
+    0% {
+      opacity: 1;
+    }
+    49% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes hardblink {
+    0% {
+      opacity: 1;
+    }
+    49% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .white-space {
+    white-space: pre-wrap;
+  }
+  
+
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(9px);
+              filter: blur(9px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(9px);
+              filter: blur(9px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+.bg-planet{
+    width: 600px;
+    height: auto;
+    z-index: -1;
+    display: inline;
+    position: absolute;
+    opacity: 0.8;
+}
+.planet-right{
+    
+    right: 2%;
+}
 
 /* TEST CSS */
 
@@ -210,11 +362,11 @@ h2 {
     right: 10%;
     width: 470px;
     height: auto;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
+    -ms-transform: scaleX(-1);
+        transform: scaleX(-1);
+    -webkit-filter: FlipH;
+            filter: FlipH;
     -ms-filter: "FlipH";
     z-index: 1;
 }
@@ -228,9 +380,7 @@ h2 {
 .jumbo {
     background-image: url('images/galaksija-min.png');
     background-size: cover;
-    width: 100vw;
     padding-left: 200px;
-    height: 600px;
     /* parralax efekat
    background-attachment: fixed;
     background-position: center;
@@ -238,11 +388,30 @@ h2 {
     background-size: cover;
   */
 }
-
-.text-purple {
-    color: var(--color-purple)!important;
+.jumbo-content{
 }
-
+.text-purple {
+    color: #0176fc!important;
+}
+.loading{
+    z-index: 99999;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    top: 0;
+    background: black;
+}
+.loading:after{
+    content: "";
+    background-image: url("images/graphy-dark.png");
+    opacity: 0.43;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}
 
 /* Prikaz samo za kompjutere */
 
@@ -271,17 +440,25 @@ h2 {
         left: 0;
         background: rgba(0, 0, 0, 0.95);
         font-size: 25px;
-        animation: fadeIn 0.4s ease-in-out;
+        animation: fadeIn 0.4s;
         transition: 1s;
         -webkit-transition: 1s;
         -moz-transition: 1s;
         -ms-transition: 1s;
         -o-transition: 1s;
-        -webkit-animation: fadeIn 0.4s ease-in-out;
+        -webkit-animation: fadeIn 0.4s;
         text-align: center;
+        padding-top: 33%;
     }
-    .jumbo {
-        max-height: 100vh;
+    .first-planet{
+        top: 38%;
+        padding: 60px;
+    }
+    .bg-planet{
+        width: 360px;
+    }
+    .loadingtext {
+        font-size: 2.5rem;
     }
     .hamburger-icon {
         display: inline-block;
@@ -289,7 +466,9 @@ h2 {
     }
     .mainmenu a {
         text-align: center;
-        animation: slideDown 1s;
+        -webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            text-shadow: 0 0 15px #0176fc;
         font-size: 26px;
     }
     .opacity {
@@ -300,6 +479,10 @@ h2 {
         max-width: 400px;
     }
     .logo{
-        margin-top: 1%;
+    padding-top: 10%;
+    }
+
+    .container mt-5>row{
+        background-color: #01000a;
     }
 }

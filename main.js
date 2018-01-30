@@ -4,10 +4,11 @@ var menu = document.querySelector('#menu');
 var myNav = document.querySelector('.navbar');
 const loading = document.querySelector('.loading');
 const content = document.querySelector('.loadedcontent');
+const footer = document.querySelector('footer');
 
 function toggleMenu() {
     menu.classList.toggle("opacity");
-    menu.style.display == "flex" ? menu.style.display = "none" : menu.style.display = "flex";
+    menu.style.display == "block" ? menu.style.display = "none" : menu.style.display = "block";
 }
 
 window.onscroll = function () {
@@ -25,26 +26,29 @@ window.onscroll = function () {
 
 function hideLoading() {
     loading.style.display = "none";
-    content.style.display = "flex";
+    content.style.display = "block";
+    footer.style.display = "block";
 }
-// typer('#headingtotype', {min: 20, max: 350}).back('empty').line({container: '#headingtotype'}); 
+function check() {
+    "use strict";
 
-/*typer('.hakaton-heading', {
-        min: 100,
-        max: 350
-    })
-    .listen('loadingend')
-    .pause(300).
-cursor({
-        block: true
-    })
-    .line('FON HAKAFON')
-    .back(3)
-    .continue('TON 2018');
-*/
+    if (typeof Symbol == "undefined") return false;
+    try {
+        eval("class Foo {}");
+        eval("var bar = (x) => x+1");
+    } catch (e) { return false; }
 
+    return true;
+}
 
-typer('.stats', {
+if (check()) {
+typingAnimation();
+} else {
+  alert('Tvoj browser ne podržava neke funkcije ovog sajta, moguće su greške u prikazivanju. Ažuriraj svoj web browser.');
+  hideLoading();
+}
+function typingAnimation(){
+    typer('.stats', {
         min: 20,
         max: 350
     })
@@ -97,6 +101,10 @@ typer('#console', {
     .emit('loadingend')
     .end(hideLoading); 
 
+}
+
+window.sr = ScrollReveal();
+sr.reveal('.reveal');
   
 if (localStorage.getItem("development")) {
     hideLoading();
