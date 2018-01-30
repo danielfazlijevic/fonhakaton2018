@@ -11,6 +11,13 @@ function toggleMenu() {
     menu.style.display == "block" ? menu.style.display = "none" : menu.style.display = "block";
 }
 
+const links = document.querySelectorAll('.nav-link');
+[].forEach.call(links,function(e){e.addEventListener('click',()=>{
+ toggleMenu();   
+},false)})
+
+
+
 window.onscroll = function () {
     "use strict";
     if (document.documentElement.scrollTop >= 3) {
@@ -121,8 +128,6 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
-
-
 
 
 if (localStorage.getItem("development")) {
