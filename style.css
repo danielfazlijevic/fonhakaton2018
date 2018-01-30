@@ -394,7 +394,7 @@ footer {
     float: left;
 }
 .timer{
-    margin: auto;
+    margin-left: 28%;
     width: 50%;
 }
 .clear{
@@ -479,7 +479,7 @@ footer {
         font-size: 11px;
     }
     .timer{
-        margin: auto;
+        margin-left: 28%;
         width: 50vh;
     }
     .timer>p{
