@@ -254,65 +254,125 @@
         </div>
     </div>
     <footer class='mt-5'>
-        <div class="container mt-5">
 
             <div class="row">
 
-             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-                 <img src="./images/Screenshot1.png" width="200px">
+             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4">
+                 <img src="./images/planetafooter.png" height="235px" hspace="0" vspace="0">
              </div>
 
-             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-                    <div id="map" style="width:200px;height:180px;background:rgb(247, 247, 242)"></div>
+             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4">
+                    <div id="map" style="width:340px;height:235px;background:rgb(247, 247, 242)"></div>
              </div>
             
 
-             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">                
-                 <h3>KONTAKT</h3>
-                 <ul class="list-unstyled clear-margins">
-                    <li>FON</li>
-                        <li>Adresa</li>
-                        <li>Telefon 1</li>
-                        <li>Telefon 2</li>
+  
 
-                </ul>  
-             </div>
+             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4">
+                        <h3>KONTAKT</h3>
+                        <ul class="list-unstyled clear-margins">
+                                <li>Fakultet Organizacionih Nauka</li>
+                                <li>Jove Ilića 154</li>
+                                <li>Telefon 1</li>
+                                <li>Telefon 2</li>
+                        </ul>
+                        <div>
+                                <h3>PRATITE NAS NA:</h3>
+                                <a href="#"> <img src="./images/FB.png" width="50ppi"> </a>
+                                <a href="#"> <img src="./images/Twitter.png" width="50ppi"> </a>
+                                <a href="#"> <img src="./images/Instagram.png" width="50ppi"> </a>
+            
+                        </div>
+                 
 
-             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-                 <h3>PRATITE NAS NA:</h3>
-<!--Facebook-->
-
-<a type="button" class="btn-floating btn-large btn-fb"><i class="fa fa-facebook"></i></a>
-<!--Twitter-->
-<a type="button" class="btn-floating btn-large btn-tw"><i class="fa fa-twitter"></i></a> 
-<!--Google +-->
-<a type="button" class="btn-floating btn-large btn-gplus"><i class="fa fa-google-plus"></i></a>
-<!--Linkedin-->
-<a type="button" class="btn-floating btn-large btn-li"><i class="fa fa-linkedin"></i></a>
-<!--Instagram-->
-<a type="button" class="btn-floating btn-large btn-ins"><i class="fa fa-instagram"></i></a>
        
  </div>
         </div>
 
-        </div>
     </footer>
-    <script>
-            function initMap() {
-              var uluru = {lat: -25.363, lng: 131.044};
-              var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 4,
-                center: uluru
-              });
-              var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-              });
+ 
+<script>
+    function initMap() {
+      // Styles a map in night mode.
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 44.772601, lng: 20.475168},
+        zoom: 16,
+        styles: [
+        {
+          "featureType": "administrative",
+          "stylers": [
+            {
+              "color": "#808080"
             }
-          </script>
-          <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBThGdej9p6XHw9_4j3Q0h4utbNFp4I2w&callback=initMap">
-          </script>
+          ]
+        },
+        {
+          "featureType": "landscape",
+          "elementType": "geometry.fill",
+          "stylers": [
+            {
+              "color": "#404040"
+            }
+          ]
+        },
+        {
+          "featureType": "landscape",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "featureType": "landscape.natural",
+          "stylers": [
+            {
+              "color": "#696969"
+            }
+          ]
+        },
+        {
+          "featureType": "poi.park",
+          "elementType": "geometry.fill",
+          "stylers": [
+            {
+              "color": "#303030"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "stylers": [
+            {
+              "color": "#f59700"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#000000"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "labels.text.stroke",
+          "stylers": [
+            {
+              "color": "#ffffff"
+            }
+          ]
+        }
+      ]
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBThGdej9p6XHw9_4j3Q0h4utbNFp4I2w&callback=initMap"
+  async defer></script>
     <script src="typer-babel-min.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="main.min.js"></script>
