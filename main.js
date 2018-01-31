@@ -11,6 +11,13 @@ function toggleMenu() {
     menu.style.display == "block" ? menu.style.display = "none" : menu.style.display = "block";
 }
 
+const links = document.querySelectorAll('.nav-link');
+[].forEach.call(links,function(e){e.addEventListener('click',()=>{
+ toggleMenu();   
+},false)})
+
+
+
 window.onscroll = function () {
     "use strict";
     if (document.documentElement.scrollTop >= 3) {
@@ -91,11 +98,11 @@ typer('#console', {
     .line("[sudo]Password for root: *******")
     .line("Entry is allowed.")
     .line("FON HAKATON 2018 is being initialized...")
-    .line("Date: 05/03/2018. Destination set: Belgrade, Serbia")
+    .line("Date: 31/03/2018. Destination set: Belgrade, Serbia")
     .line("Location: Fakultet Organizacionih Nauka.")
     .line("Organized by: FONIS.rs")
     .line("Fun level: MAX")
-    .line("Partners: SBB ")
+    .line("Partner: Telekom ")
     .line("Loading complete.")
     .pause(500)
     .emit('loadingend')
@@ -105,7 +112,24 @@ typer('#console', {
 
 window.sr = ScrollReveal();
 sr.reveal('.reveal');
-  
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+
 if (localStorage.getItem("development")) {
     hideLoading();
 }
