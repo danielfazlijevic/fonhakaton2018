@@ -187,6 +187,30 @@ footer {
 .no-cursor::after {
     content: none;
 }
+/*  Footer -> */
+
+footer{
+    margin-top: 10px;
+}
+
+#map{
+    width:330px;
+    height:240px;
+    background:rgb(247, 247, 242);
+}
+
+.planetafooter{
+    height: 300px;        
+}
+
+.drustvene-mreze{
+    width: 50px !important;
+}
+.ubijme2{
+    display: none;
+}
+
+/* ^^^^Footer^^^^^ */
 
 @-webkit-keyframes softblink {
     0% {
@@ -482,6 +506,16 @@ footer {
     .timer>p{
         padding: 0;
         margin: 0;
+    }
+    .ubijme{
+        display: none;
+        }
+    .ubijme2{
+        display: initial;
+    }
+    
+    .planetafooter{          
+        height: 200px;
     }
     
 }
