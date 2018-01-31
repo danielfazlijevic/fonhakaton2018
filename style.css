@@ -137,7 +137,7 @@ h2 {
 }
 
 .logo {
-    width: 300px;
+    width: 350px;
 }
 
 .nav-colored {
@@ -406,7 +406,8 @@ footer {
         padding-bottom: 2%;
     }
     .logo {
-        margin-top: -60px;
+        margin-top: -140px;
+        margin-bottom: -5%;
     }
 }
 
@@ -462,8 +463,8 @@ footer {
         margin: 0 auto;
         max-width: 400px;
     }
-    .logo {
-        padding-top: 10%;
+    .logo{
+        margin-bottom: -22%;
     }
     .container mt-5>row {
         background-color: #01000a;
