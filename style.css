@@ -83,7 +83,7 @@ body:after {
 }
 
 .partners-img {
-    max-width: 200px;
+    width: 200px;
 }
 
 .cl-effect-1 a::before,
