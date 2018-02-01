@@ -182,6 +182,7 @@ h2 {
 
 footer{
     margin-top: 10px;
+    max-width: 90vw;
 }
 
 #map{
@@ -504,7 +505,7 @@ footer{
     }
     
     .planetafooter{          
-       max-width: 85vw;
+    max-width: 350px;
     }
     #map{
         max-width: 85vw;
