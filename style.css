@@ -504,10 +504,10 @@ footer{
     }
     
     .planetafooter{          
-       max-width: 360px;
+       max-width: 85vw;
     }
     #map{
-        max-width: 360px;
+        max-width: 85vw;
     }
     
 }
