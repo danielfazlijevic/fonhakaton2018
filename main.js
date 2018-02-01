@@ -60,7 +60,7 @@ function typingAnimation(){
         max: 350
     })
     .pause(500)
-    .line("50 TIMOVA")
+    .line("25 TIMOVA")
     .pause(200)
     .continue(' // ')
     .pause(300)
@@ -71,7 +71,7 @@ function typingAnimation(){
     .continue('JEDAN POBEDNIČKI TIN')
     .pause(300)
     .back(1)
-    .continue('M')
+    .continue('MA')
     .end();
 
 typer('.loadingtext', {
