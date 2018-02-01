@@ -58,20 +58,15 @@ body:after {
 }
 
 .btn-prijava {
-    background: #ec008c;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-gradient(linear, left top, right top, from(#fc6767), to(#ec008c));
-    background: -webkit-linear-gradient(left, #fc6767, #ec008c);
-    background: -o-linear-gradient(left, #fc6767, #ec008c);
-    background: linear-gradient(to right, #fc6767, #ec008c);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0575E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .btn-prijava:hover {
-    -webkit-box-shadow: 0px 1px 20px rgb(231, 79, 224);
-    box-shadow: 0px 1px 20px rgb(231, 79, 224);
+    -webkit-box-shadow: 0px 1px 20px rgba(54,209,220,0.8);
+    box-shadow: 0px 1px 20px rgba(54,209,220,0.8);
     color: #fff;
 }
 
@@ -464,7 +459,7 @@ footer{
         padding: 60px;
     }
     .bg-planet {
-        width: 360px;
+        max-width: 330px;
     }
     .loadingtext {
         font-size: 2.5rem;
@@ -489,6 +484,7 @@ footer{
     }
     .logo{
         margin-bottom: -22%;
+        width: 260px;
     }
     .container mt-5>row {
         background-color: #01000a;
@@ -499,9 +495,6 @@ footer{
         
     #tekst{
         font-size: 11px;
-    }
-    .timer{
-    
     }
     .timer>p{
         padding: 0;

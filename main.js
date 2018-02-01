@@ -60,7 +60,7 @@ function typingAnimation(){
         max: 350
     })
     .pause(500)
-    .line("50 TIMOVA")
+    .line("25 TIMOVA")
     .pause(200)
     .continue(' // ')
     .pause(300)
@@ -71,7 +71,7 @@ function typingAnimation(){
     .continue('JEDAN POBEDNIČKI TIN')
     .pause(300)
     .back(1)
-    .continue('M')
+    .continue('MA')
     .end();
 
 typer('.loadingtext', {
@@ -130,6 +130,117 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
+
+var countDownDate = new Date("March 31, 2018 18:00:00").getTime();
+
+var x = setInterval(function countdown() {
+
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    function makeMeTwoDigits(n){
+        return (n < 10 ? "0" : "") + n;
+    }
+    
+    document.getElementById("dani").innerHTML = makeMeTwoDigits(days);
+    document.getElementById("sati").innerHTML = makeMeTwoDigits(hours);
+    document.getElementById("minuti").innerHTML = makeMeTwoDigits(minutes);
+    document.getElementById("sekunde").innerHTML = makeMeTwoDigits(seconds);
+
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Hakaton je počeo!";
+    }
+}, 1000);
+
+
+
+function initMap() {
+    // Styles a map in night mode.
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 44.772601, lng: 20.475168},
+      zoom: 16,
+      styles: [
+      {
+        "featureType": "administrative",
+        "stylers": [
+          {
+            "color": "#808080"
+          }
+        ]
+      },
+      {
+        "featureType": "landscape",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#404040"
+          }
+        ]
+      },
+      {
+        "featureType": "landscape",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#ffffff"
+          }
+        ]
+      },
+      {
+        "featureType": "landscape.natural",
+        "stylers": [
+          {
+            "color": "#696969"
+          }
+        ]
+      },
+      {
+        "featureType": "poi.park",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#303030"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "stylers": [
+          {
+            "color": "#f59700"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#000000"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#ffffff"
+          }
+        ]
+      }
+    ]
+    });
+    console.log ("test");
+  }
+
+
 if (localStorage.getItem("development")) {
     hideLoading();
 }
+
+
