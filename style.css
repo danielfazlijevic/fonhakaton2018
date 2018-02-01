@@ -18,8 +18,6 @@ body:after {
     opacity: 0.43;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
     position: fixed;
     z-index: -1;
 }
@@ -489,6 +487,7 @@ footer{
     }
     .logo{
         margin-bottom: -22%;
+        width: 260px;
     }
     .container mt-5>row {
         background-color: #01000a;
