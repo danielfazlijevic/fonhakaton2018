@@ -311,109 +311,42 @@
     </div>
     <footer class="d-none mt-5">
         <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4">
-                <img src="./images/planetafooter.png" height="235px" hspace="0" vspace="0">
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4">
-                <div id="map" style="width:340px;height:235px;background:rgb(247, 247, 242)"></div>
-            </div>
-
-
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4" id="kontakt">
-                <h3>KONTAKT</h3>
-                <ul class="list-unstyled clear-margins">
-                    <li>Fakultet Organizacionih Nauka</li>
-                    <li>Jove Ilića 154</li>
-                    <li>Telefon 1</li>
-                    <li>Telefon 2</li>
-                </ul>
-                <div>
-                    <h3>PRATITE NAS NA:</h3>
-                    <a href="#">
-                        <img src="./images/FB.png" width="50ppi">
-                    </a>
-                    <a href="#">
-                        <img src="./images/Twitter.png" width="50ppi">
-                    </a>
-                    <a href="#">
-                        <img src="./images/Instagram.png" width="50ppi">
-                    </a>
+                <div class="col-md-4 col-lg-5 ubijme">
+                        <img src="./images/planetafootermanja.png" class="planetafooter">
                 </div>
-
+               
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                    <br>
+                        <div id="map"></div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <br>
+                        <h3>KONTAKT</h3>
+                            <ul class="list-unstyled clear-margins">
+                                <li>Fakultet Organizacionih Nauka</li>
+                                <li>Jove Ilića 154</li>
+                                <li>Telefon 1</li>
+                                <li>Telefon 2</li>
+                            </ul>
+                    <div class="zaprati">
+                        <h3>PRATITE NAS NA:</h3>
+                                <a href="https://www.facebook.com/fonis.rs/"> <img src="./images/FB.png" class="drustvene-mreze"> </a>
+                                <a href="https://twitter.com/fonis_fon"> <img src="./images/Twitter.png" class="drustvene-mreze"> </a>
+                                <a href="https://www.instagram.com/fonis_fon/"> <img src="./images/Instagram.png" class="drustvene-mreze"> </a>
+                    </div>    
+             </div>
+             <div class="col-xs-12 col-sm-4 ubijme2">
+                    <img src="./images/planetafootermanja.png" class="planetafooter">
             </div>
         </div>
     </footer>
-    <script>
-        function initMap() {
-            // Styles a map in night mode.
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: {
-                    lat: 44.772601,
-                    lng: 20.475168
-                },
-                zoom: 16,
-                styles: [{
-                        "featureType": "administrative",
-                        "stylers": [{
-                            "color": "#808080"
-                        }]
-                    },
-                    {
-                        "featureType": "landscape",
-                        "elementType": "geometry.fill",
-                        "stylers": [{
-                            "color": "#404040"
-                        }]
-                    },
-                    {
-                        "featureType": "landscape",
-                        "elementType": "labels.text.fill",
-                        "stylers": [{
-                            "color": "#ffffff"
-                        }]
-                    },
-                    {
-                        "featureType": "landscape.natural",
-                        "stylers": [{
-                            "color": "#696969"
-                        }]
-                    },
-                    {
-                        "featureType": "poi.park",
-                        "elementType": "geometry.fill",
-                        "stylers": [{
-                            "color": "#303030"
-                        }]
-                    },
-                    {
-                        "featureType": "road",
-                        "stylers": [{
-                            "color": "#f59700"
-                        }]
-                    },
-                    {
-                        "featureType": "road",
-                        "elementType": "labels.text.fill",
-                        "stylers": [{
-                            "color": "#000000"
-                        }]
-                    },
-                    {
-                        "featureType": "road",
-                        "elementType": "labels.text.stroke",
-                        "stylers": [{
-                            "color": "#ffffff"
-                        }]
-                    }
-                ]
-            });
-        }
-    </script>
+ 
     <script src="typer-babel-min.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="main.min.js"></script>
     <script src="tilt.js"></script>
     <script src="tajmer.js"></script>
+    <script src="map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBThGdej9p6XHw9_4j3Q0h4utbNFp4I2w&callback=initMap" async
         defer></script>
     <script src="https://cdn.jsdelivr.net/npm/zenscroll@4.0.0/zenscroll-min.js"></script>
