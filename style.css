@@ -186,13 +186,13 @@ footer{
 }
 
 #map{
-    width:330px;
-    height:240px;
+    width:400px;
+    height:350px;
     background:rgb(247, 247, 242);
 }
 
 .planetafooter{
-    height: 350px;        
+    height: 500px;        
 }
 
 .drustvene-mreze{
@@ -395,16 +395,16 @@ footer{
   }
 
 
-#tekst{
+#tekst {
     padding-top: 0;
     margin-top: 0;
     color: white;
     text-align: center;
     font-size: 20px;
-    font-family: 'Aldrich', sans-serif;
+    font-family: 'Anonymous Pro', monospace;
     opacity: 0.5;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 .days, .hours, .minutes, .seconds, #sep{
     float: left;
@@ -481,7 +481,7 @@ footer{
     }
     .logo{
         margin-bottom: -22%;
-        width: 260px;
+        width: 240px;
     }
     .container mt-5>row {
         background-color: #01000a;
@@ -500,12 +500,13 @@ footer{
     .ubijme{
         display: none;
         }
-    .ubijme2{
+    .ubijme2 {
         display: initial;
     }
-    
-    .planetafooter{          
-    max-width: 350px;
+
+    .planetafooter {
+        max-width: 350px;
+        max-height: 350px;
     }
     #map{
         max-width: 85vw;
