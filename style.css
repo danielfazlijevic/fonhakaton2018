@@ -261,8 +261,13 @@ footer{
 .white-space {
     white-space: pre-wrap;
 }
+.zaprati a{
+color: #fff;
+transition: 0.5s;
+}
 .zaprati a:hover{
 text-decoration: none;
+color: #0575E6;
 }
 @-webkit-keyframes text-focus-in {
     0% {
