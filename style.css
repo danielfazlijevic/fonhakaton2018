@@ -197,7 +197,7 @@ footer{
 }
 
 #map{
-    width:400px;
+    max-width:400px;
     height:350px;
     background:rgb(247, 247, 242);
 }
@@ -528,6 +528,10 @@ color: #0575E6;
     }
     #map{
         max-width: 85vw;
+    }
+    footer .row{
+        max-width: 99vw;
+        padding-right: 0;
     }
     
 }
