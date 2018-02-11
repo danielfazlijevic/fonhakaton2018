@@ -49,7 +49,7 @@ body:after {
 
 .about a:hover,
 .link:hover {
-    background-color: rgb(161, 61, 255);
+    background-color: white;
     color: black;
 }
 
@@ -78,7 +78,18 @@ background: linear-gradient(to bottom, #021B79, #0575E6); /* W3C, IE 10+/ Edge, 
 }
 
 .partners-img {
-    width: 200px;
+    max-width: 300px;
+}
+.partners-img--sm{
+    max-height: 80px;
+}
+.irc-img{
+    max-width: 200px;
+}
+.ver-center{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .cl-effect-1 a::before,
