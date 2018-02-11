@@ -110,9 +110,6 @@ typer('#console', {
 
 }
 
-window.sr = ScrollReveal();
-sr.reveal('.reveal');
-
 
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -235,7 +232,6 @@ function initMap() {
       }
     ]
     });
-    console.log ("test");
   }
 
 

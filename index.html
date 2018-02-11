@@ -326,13 +326,15 @@
 
     <script src="typer-babel-min.js"></script>
     <script src="main.min.js"></script>
-    <script async defer src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script async defer src="tilt.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBThGdej9p6XHw9_4j3Q0h4utbNFp4I2w&callback=initMap" async
         defer></script>
-    <script async defer src="https://cdn.jsdelivr.net/npm/zenscroll@4.0.0/zenscroll-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zenscroll@4.0.0/zenscroll-min.js"></script>
     <script>
         zenscroll.setup(777, 100);
+        window.sr = ScrollReveal();
+        sr.reveal('.reveal');
     </script>
 </body>
 
