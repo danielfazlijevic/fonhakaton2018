@@ -432,6 +432,23 @@ color: #0575E6;
     clear:both;
 }
 
+#sendbtn{
+background-color: #fff;
+outline: none;
+border: none;
+height: 35px;
+transition: 0.5s;
+
+}
+#mail-input{
+height: 35px;
+padding-left: 10px;
+}
+#sendbtn:hover{
+background-color: #0176fc;
+color: #fff;
+cursor: pointer;
+}
 /* Prikaz samo za kompjutere */
 
 @media (min-width: 992px) {
