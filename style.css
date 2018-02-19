@@ -200,6 +200,8 @@ footer{
     max-width:400px;
     height:350px;
     background:rgb(247, 247, 242);
+    border-radius: 10%;
+    border: 1px solid rgba(228, 221, 208 , .5);
 }
 
 .planetafooter{
