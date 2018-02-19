@@ -153,6 +153,10 @@ var x = setInterval(function countdown() {
     }
 }, 1000);
 
+
+
+
+
 function initMap() {
   var uluru = {lat: 44.772601, lng: 20.475168};
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -493,8 +497,11 @@ function initMap() {
         XHR.send(urlEncodedData);
       }
 
-if (localStorage.getItem("development")) {
+if (localStorage.getItem("development") == true) {
     hideLoading();
 }
 
-
+document.addEventListener('keydown', function(event) {
+  if(event.keyCode == 27) {
+     hideLoading();
+  }});
