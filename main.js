@@ -110,9 +110,6 @@ typer('#console', {
 
 }
 
-window.sr = ScrollReveal();
-sr.reveal('.reveal');
-
 
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -235,9 +232,28 @@ function initMap() {
       }
     ]
     });
-    console.log ("test");
   }
 
+
+    
+  document.querySelector(".nl-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+    sendData();
+  });
+    function sendData() {
+        var XHR = new XMLHttpRequest();
+        var urlEncodedData = document.querySelector('#mail-input').value;
+        
+        XHR.addEventListener('load', function(event) {
+          alert('Tvoj mejl je uspešno dodat u newsletter! Dobijaćes povremena obaveštenja o FON Hakatonu.');
+        });
+        XHR.addEventListener('error', function(event) {
+          alert('Došlo je do greške! Pokušaj ponovo kasnije ili nam pošalji mejl na office@fonis.rs');
+        });
+        XHR.open('POST', 'submit.php');
+        XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        XHR.send(urlEncodedData);
+      }
 
 if (localStorage.getItem("development")) {
     hideLoading();
