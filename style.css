@@ -546,7 +546,7 @@ footer {
         max-width: 400px;
     }
     .logo {
-        margin-bottom: -22%;
+        padding-top: 12%;
         width: 240px;
     }
     .container mt-5>row {
