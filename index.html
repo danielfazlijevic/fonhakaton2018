@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Audiowide|Aldrich" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon.png">
 </head>
 
 <body>
@@ -19,6 +20,7 @@
         <div class="container">
             <h2 class="display-3 mt-5 text-purple loadingtext"></h2>
             <div id="console"></div>
+            <p id="skip-loading" onClick='hideLoading()'>Pritisni ovde ili ESC da preskočiš</p>
         </div>
     </div>
     <div class="loadedcontent">
@@ -31,6 +33,10 @@
 
             <div class="collapse navbar-collapse justify-content-center mainmenu" id="menu">
                 <ul class="navbar-nav cl-effect-1">
+
+                    <li class="nav-item slideDown text-purple">
+                        <a class="nav-link h5 mx-3 text-purple text-focus-in" href="#prijava"> PRIJAVI SE! </a>
+                    </li>
                     <li class="nav-item slideDown">
                         <a class="nav-link h5 mx-3 text-purple text-focus-in" href="#ohakatonu"> O HAKATONU </a>
                     </li>
@@ -40,26 +46,23 @@
                     <li class="nav-item slideDown text-purple">
                         <a class="nav-link h5 mx-3 text-purple text-focus-in" href="#faq"> FAQ </a>
                     </li>
-
-                    <li class="nav-item slideDown text-purple">
-                        <a class="nav-link h5 mx-3 text-purple text-focus-in" href="#agenda"> AGENDA </a>
-                    </li>
                     <li class="nav-item slideDown text-purple">
                         <a class="nav-link h5 mx-3 text-purple text-focus-in" href="#koor"> KOORDINATORI </a>
                     </li>
                     <li class="nav-item slideDown text-purple">
                         <a class="nav-link h5 mx-3 text-purple text-focus-in" href="#kontakt"> KONTAKT </a>
                     </li>
+
                 </ul>
 
             </div>
         </nav>
-        <div class=" main">
+        <div class=" main" id="prijava">
 
             <div class="jumbo px-5 reveal">
                 <img src='images/111-min.png' class='bg-planet first-planet planet-right'>
                 <div class="jumbo-content">
-                    <div data-tilt data-tilt-max-glare data-tilt-reverse data-tilt-max="20" class="tilt">
+                    <div data-tilt data-tilt-max-glare data-tilt-reverse data-tilt-max="10" class="tilt">
 
                         <img src="images/logo.png" class='logo rounded mx-auto d-block' alt="fon hakaton logo">
                         <br>
@@ -111,8 +114,9 @@
                         <p id="tekst">Sekundi</p>
                     </div>
                 </div>
-
+                
             </div>
+            
             <div class="container pt-5">
 
                 <div class="about  reveal" id="ohakatonu">
@@ -153,27 +157,24 @@
                     <div class="row m-2 justify-content-center text-center">
                         <div class="col-sm mx-1 reveal">
                             <h3>Organizuje</h3>
-
-                            <img data-tilt data-tilt-max-glare data-tilt-reverse data-tilt-glare data-tilt-max-glare="0.8" data-tilt-max="40" class="partners-img m-3"
-                                src="images/fonis.png" alt="">
-                            <img data-tilt data-tilt-max-glare data-tilt-reverse data-tilt-glare data-tilt-max-glare="0.8" data-tilt-max="40" class="partners-img m-3"
-                                src="images/IRC.png" alt="">
-
-
+                            <div class='ver-center'>
+                                <img class="partners-img img-responsive mt-5 ver-center" src="images/fonis.png" alt="">
+                            </div>
                         </div>
 
                         <div class="col-sm mx-1 reveal">
                             <h3>Generalni pokrovitelj</h3>
-                            <img data-tilt data-tilt-max-glare data-tilt-reverse data-tilt-glare data-tilt-max-glare="0.8" data-tilt-max="40" class="partners-img m-3"
-                                src="images/telekom.jpg" alt="">
+                            <div class='ver-center'>
+
+                                <img class="partners-img img-responsive mt-5 mb-5 ver-center" src="images/telekom.png" alt="">
+                            </div>
                         </div>
                         <div class="col-sm mx-1 reveal">
                             <h3>Partneri</h3>
-
-
-                            <img data-tilt data-tilt-max-glare data-tilt-reverse data-tilt-glare data-tilt-max-glare="0.8" data-tilt-max="40" class="partners-img m-3"
-                                src="images/fonlogo.png" alt="">
-
+                            <div class='mt-5'>
+                                <img class="partners-img--sm" src="images/fonlogo.png" alt="">
+                                <img class="partners-img--sm irc-img" src="images/IRC.png" alt="">
+                            </div>
 
 
 
@@ -194,10 +195,10 @@
                             <img src="./images/knjazlogo.png">
                         </div>
                         <div class="col-sm m-2 thumbnail">
-                            <img src="http://via.placeholder.com/200x200">
+                            <img src="./images/pozadina1.png">
                         </div>
                         <div class="col-sm m-2 thumbnail">
-                            <img src="http://via.placeholder.com/200x200">
+                            <img src="./images/pozadina1.png">
                         </div>
                     </div>
                     <img src='images/444-min.png' class='bg-planet'>
@@ -211,46 +212,33 @@
                     <br>
                     <br>
                     <img src='images/555-min.png' class='bg-planet planet-right'>
+
                     <div class="row d-flex justify-content-around">
                         <div class="col  mt-2">
-                            <img src="http://via.placeholder.com/150x150">
+                            <img src="./images/pozadina2.png">
                         </div>
                         <div class="col mt-2">
-                            <img src="http://via.placeholder.com/150x150">
+                            <img src="./images/pozadina2.png">
                         </div>
                         <div class="col  mt-2">
-                            <img src="http://via.placeholder.com/150x150">
+                            <img src="./images/pozadina2.png">
                         </div>
                         <div class="col  mt-2">
-                            <img src="http://via.placeholder.com/150x150">
+                            <img src="./images/pozadina2.png">
                         </div>
                     </div>
                     <div class="row d-flex justify-content-around">
                         <div class="col  mt-2">
-                            <img src="http://via.placeholder.com/150x150">
+                            <img src="./images/pozadina2.png">
                         </div>
                         <div class="col mt-2">
-                            <img src="http://via.placeholder.com/150x150">
+                            <img src="./images/pozadina2.png">
                         </div>
                         <div class="col  mt-2">
-                            <img src="http://via.placeholder.com/150x150">
+                            <img src="./images/pozadina2.png">
                         </div>
                         <div class="col  mt-2">
-                            <img src="http://via.placeholder.com/150x150">
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-around">
-                        <div class="col  mt-2">
-                            <img src="http://via.placeholder.com/150x150">
-                        </div>
-                        <div class="col mt-2">
-                            <img src="http://via.placeholder.com/150x150">
-                        </div>
-                        <div class="col  mt-2">
-                            <img src="http://via.placeholder.com/150x150">
-                        </div>
-                        <div class="col  mt-2">
-                            <img src="http://via.placeholder.com/150x150">
+                            <img src="./images/pozadina2.png">
                         </div>
                     </div>
                 </div>
@@ -287,16 +275,7 @@
                         <a href="#" class="link2">Pošalji nam mejl.</a>
                     </p>
                 </div>
-                <div class="agenda-section reveal" id="agenda">
 
-                    <h2 class="text-purple heading mt-5">
-                        <span class="text-muted2">04</span>
-                        <b> AGENDA </b>
-                    </h2>
-                    <hr class="orange-line">
-                    <br>
-                    <br>
-                </div>
                 <div class="koor-section reveal" id="koor">
 
                     <h2 class="text-purple heading mt-5">
@@ -313,7 +292,7 @@
     <footer class="mt-5">
         <div class="row">
             <div class="col-md-4 col-lg-5 ubijme">
-                <img src="./images/planetafooter3.png" class="planetafooter">
+                <img src="./images/planeta.png" class="planetafooter">
             </div>
 
 
@@ -323,39 +302,59 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 mx-3 ">
                 <br>
+
+                <div class="newsletter mx-2 mb-3">
+                        <p>Prijavi se na naš newsletter za najnovija obaveštenja o hakatonu.</p>
+                        <form class='nl-form'>
+    
+                            <input type='email' id="mail-input" name='email' placeholder='Tvoj email'>
+                            <button type='submit' id="sendbtn">Pošalji</button>
+    
+                        </form>
+                    </div>
+
                 <h3>KONTAKT</h3>
+
+                
                 <ul class="list-unstyled clear-margins">
                     <li>Fakultet Organizacionih Nauka</li>
                     <li>Jove Ilića 154</li>
-                    <li>Telefon 1</li>
-                    <li>Telefon 2</li>
+                    <li>office@fonis.com</li>
+
                 </ul>
                 <div class="zaprati">
                     <h3>PRATITE NAS NA:</h3>
                     <a href="https://www.facebook.com/fonis.rs/">
-                        <img src="./images/FB.png" class="drustvene-mreze"> </a>
+                        <i class="fa fa-2x fa-facebook"></i>
+                    </a>
                     <a href="https://twitter.com/fonis_fon">
-                        <img src="./images/Twitter.png" class="drustvene-mreze"> </a>
+                        <i class="fa fa-2x fa-twitter"></i>
+                    </a>
                     <a href="https://www.instagram.com/fonis_fon/">
-                        <img src="./images/Instagram.png" class="drustvene-mreze"> </a>
+                        <i class="fa fa-2x fa-instagram"></i>
+                    </a>
                 </div>
 
+
             </div>
+
             <div class="col-xs-12 col-sm-4 ubijme2">
-                <img src="./images/planetafooter3.png" class="planetafooter">
+                <img src="./images/planeta.png" class="planetafooter">
             </div>
         </div>
     </footer>
 
     <script src="typer-babel-min.js"></script>
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="main.min.js"></script>
-    <script src="tilt.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script async defer src="tilt.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBThGdej9p6XHw9_4j3Q0h4utbNFp4I2w&callback=initMap" async
         defer></script>
     <script src="https://cdn.jsdelivr.net/npm/zenscroll@4.0.0/zenscroll-min.js"></script>
     <script>
         zenscroll.setup(777, 100);
+        window.sr = ScrollReveal();
+        sr.reveal('.reveal');
     </script>
 </body>
 

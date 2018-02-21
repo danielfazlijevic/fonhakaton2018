@@ -110,9 +110,6 @@ typer('#console', {
 
 }
 
-window.sr = ScrollReveal();
-sr.reveal('.reveal');
-
 
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -131,7 +128,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-var countDownDate = new Date("March 31, 2018 18:00:00").getTime();
+var countDownDate = new Date("March 31, 2018 16:00:00").getTime();
 
 var x = setInterval(function countdown() {
 
@@ -158,31 +155,58 @@ var x = setInterval(function countdown() {
 
 
 
+
+
 function initMap() {
-    // Styles a map in night mode.
-    var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 44.772601, lng: 20.475168},
-      zoom: 16,
-      styles: [
+  var uluru = {lat: 44.772601, lng: 20.475168};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 17,
+    center: uluru,
+    styles:[
       {
-        "featureType": "administrative",
+        "elementType": "geometry",
         "stylers": [
           {
-            "color": "#808080"
+            "color": "#1d2c4d"
           }
         ]
       },
       {
-        "featureType": "landscape",
-        "elementType": "geometry.fill",
+        "elementType": "labels.text.fill",
         "stylers": [
           {
-            "color": "#404040"
+            "color": "#8ec3b9"
           }
         ]
       },
       {
-        "featureType": "landscape",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#1a3646"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.country",
+        "elementType": "geometry.stroke",
+        "stylers": [
+          {
+            "color": "#4b6878"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.land_parcel",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#64779e"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.province",
         "elementType": "labels.text.fill",
         "stylers": [
           {
@@ -191,10 +215,65 @@ function initMap() {
         ]
       },
       {
-        "featureType": "landscape.natural",
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.fill",
         "stylers": [
           {
-            "color": "#696969"
+            "color": "#040038"
+          }
+        ]
+      },
+      {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.stroke",
+        "stylers": [
+          {
+            "color": "#334e87"
+          }
+        ]
+      },
+      {
+        "featureType": "landscape.natural",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#023e58"
+          }
+        ]
+      },
+      {
+        "featureType": "landscape.natural",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#000b42"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#283d6a"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#ffffff"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#000000"
           }
         ]
       },
@@ -203,7 +282,25 @@ function initMap() {
         "elementType": "geometry.fill",
         "stylers": [
           {
-            "color": "#303030"
+            "color": "#000329"
+          }
+        ]
+      },
+      {
+        "featureType": "poi.park",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#f5f9fa"
+          }
+        ]
+      },
+      {
+        "featureType": "poi.park",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#001666"
           }
         ]
       },
@@ -211,7 +308,43 @@ function initMap() {
         "featureType": "road",
         "stylers": [
           {
-            "color": "#f59700"
+            "color": "#d68b00"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#304a7d"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#ffffff"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "labels",
+        "stylers": [
+          {
+            "color": "#1421ad"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "labels.text",
+        "stylers": [
+          {
+            "color": "#ffffff"
           }
         ]
       },
@@ -220,7 +353,7 @@ function initMap() {
         "elementType": "labels.text.fill",
         "stylers": [
           {
-            "color": "#000000"
+            "color": "#ffffff"
           }
         ]
       },
@@ -229,18 +362,146 @@ function initMap() {
         "elementType": "labels.text.stroke",
         "stylers": [
           {
+            "color": "#000000"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#2c6675"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
             "color": "#ffffff"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+          {
+            "color": "#255763"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#ffffff"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#000000"
+          }
+        ]
+      },
+      {
+        "featureType": "transit",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#98a5be"
+          }
+        ]
+      },
+      {
+        "featureType": "transit",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#1d2c4d"
+          }
+        ]
+      },
+      {
+        "featureType": "transit.line",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#283d6a"
+          }
+        ]
+      },
+      {
+        "featureType": "transit.station",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#3a4762"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#0e1626"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#4e6d70"
           }
         ]
       }
     ]
-    });
-    console.log ("test");
-  }
-
-
-if (localStorage.getItem("development")) {
-    hideLoading();
+  });
+  var imageLogo = 'haklogo.png';
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+    animation: google.maps.Animation.BOUNCE,
+    icon: imageLogo
+  });
 }
 
 
+    
+  document.querySelector(".nl-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+    sendData();
+  });
+    function sendData() {
+        var XHR = new XMLHttpRequest();
+        var urlEncodedData = document.querySelector('#mail-input').value;
+        
+        XHR.addEventListener('load', function(event) {
+          alert('Tvoj mejl je uspešno dodat u newsletter! Dobijaćes povremena obaveštenja o FON Hakatonu.');
+        });
+        XHR.addEventListener('error', function(event) {
+          alert('Došlo je do greške! Pokušaj ponovo kasnije ili nam pošalji mejl na office@fonis.rs');
+        });
+        XHR.open('POST', 'submit.php');
+        XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        XHR.send(urlEncodedData);
+      }
+
+if (localStorage.getItem("development") == true) {
+    hideLoading();
+}
+
+document.addEventListener('keydown', function(event) {
+  if(event.keyCode == 27) {
+     hideLoading();
+  }});
