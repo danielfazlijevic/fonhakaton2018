@@ -467,7 +467,7 @@ function initMap() {
       }
     ]
   });
-  var imageLogo = 'haklogo.png';
+  var imageLogo = 'marker15.png';
   var marker = new google.maps.Marker({
     position: uluru,
     map: map,
