@@ -94,24 +94,24 @@
                 <div class="timer">
                     <div class="days">
                         <p id="dani"></p>
-                        <p id="tekst">Dana</p>
+                        <p id="tekst">dana</p>
                     </div>
                     <p id="sep">:</p>
                     <div class="hours">
 
                         <p id="sati"></p>
-                        <p id="tekst">Sati</p>
+                        <p id="tekst">sati</p>
                     </div>
                     <p id="sep">:</p>
                     <div class="minutes">
 
                         <p id="minuti"></p>
-                        <p id="tekst">Minuta</p>
+                        <p id="tekst">minuta</p>
                     </div>
                     <p id="sep">:</p>
                     <div class="seconds">
                         <p id="sekunde"></p>
-                        <p id="tekst">Sekundi</p>
+                        <p id="tekst">sekundi</p>
                     </div>
                 </div>
                 
@@ -291,27 +291,9 @@
     </div>
     <footer class="mt-5">
         <div class="row">
-            <div class="col-md-4 col-lg-5 ubijme">
-                <img src="./images/planeta.png" class="planetafooter">
-            </div>
 
-
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 mx-3">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 ml-5 mr-4">
                 <br>
-                <div id="map"></div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 mx-3 ">
-                <br>
-
-                <div class="newsletter mx-2 mb-3">
-                        <p>Prijavi se na naš newsletter za najnovija obaveštenja o hakatonu.</p>
-                        <form class='nl-form'>
-    
-                            <input type='email' id="mail-input" name='email' placeholder='Tvoj email'>
-                            <button type='submit' id="sendbtn">Pošalji</button>
-    
-                        </form>
-                    </div>
 
                 <h3>KONTAKT</h3>
 
@@ -335,17 +317,30 @@
                     </a>
                 </div>
 
+                <p><br>Prijavi se na naš newsletter za najnovija obaveštenja o hakatonu.</p>
+                <form class='nl-form'>
+
+                    <input type='email' id="mail-input" name='email' placeholder='Tvoj email'>
+                    <button type='submit' id="sendbtn">Pošalji</button>
+
+                </form>
 
             </div>
 
-            <div class="col-xs-12 col-sm-4 ubijme2">
-                <img src="./images/planeta.png" class="planetafooter">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 mr-4">
+                <br>
+                <div id="map"></div>
             </div>
+
+            <div class="col-md-4 col-lg-5 mr-0 pull-right">
+                <img src="./images/planetica.png" class="pull-right planetafooter mr-0">
+            </div>
+
         </div>
     </footer>
 
     <script src="typer-babel-min.js"></script>
-    <script src="main.min.js"></script>
+    <script src="main.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script async defer src="tilt.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBThGdej9p6XHw9_4j3Q0h4utbNFp4I2w&callback=initMap" async

@@ -199,27 +199,27 @@ h2 {
 footer {
     margin-top: 10px;
     max-width: 99vw;
+    padding-right: 0;
+
 }
 
 #map {
     max-width: 400px;
     height: 350px;
     background: rgb(247, 247, 242);
-    border-radius: 10%;
     border: 1px solid rgba(228, 221, 208, .5);
 }
 
 .planetafooter {
-    height: 500px;
+    height: 425px;
+    padding-right: 0;
+
 }
 
 .drustvene-mreze {
     width: 50px !important;
 }
 
-.ubijme2 {
-    display: none;
-}
 
 /* ^^^^Footer^^^^^ */
 
@@ -557,24 +557,19 @@ footer {
     #minuti,
     #sekunde,
     #sep {
-        font-size: 30px;
+        padding-top: 20px;
+        font-size: 40px;
     }
     #tekst {
-        font-size: 11px;
+        font-size: 15px;
     }
     .timer>p {
         padding: 0;
         margin: 0;
     }
-    .ubijme {
-        display: none;
-    }
-    .ubijme2 {
-        display: initial;
-    }
+
     .planetafooter {
-        max-width: 350px;
-        max-height: 350px;
+        max-width: 85vw;
     }
     #map {
         max-width: 85vw;
