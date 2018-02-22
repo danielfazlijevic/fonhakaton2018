@@ -48,7 +48,7 @@ body:after {
 }
 
 .about a:hover,
-.link:hover {
+.link:hover,#skip-loading:hover {
     background-color: white;
     color: black;
 }
@@ -58,15 +58,17 @@ body:after {
 }
 
 .btn-prijava {
-    background: #0575E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #0575E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #021B79, #0575E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .btn-prijava:hover {
-    -webkit-box-shadow: 0px 1px 20px rgba(54,209,220,0.8);
-    box-shadow: 0px 1px 20px rgba(54,209,220,0.8);
+    -webkit-box-shadow: 0px 1px 20px rgba(54, 209, 220, 0.8);
+    box-shadow: 0px 1px 20px rgba(54, 209, 220, 0.8);
     color: #fff;
 }
 
@@ -80,13 +82,16 @@ background: linear-gradient(to bottom, #021B79, #0575E6); /* W3C, IE 10+/ Edge, 
 .partners-img {
     max-width: 300px;
 }
-.partners-img--sm{
+
+.partners-img--sm {
     max-height: 80px;
 }
-.irc-img{
+
+.irc-img {
     max-width: 200px;
 }
-.ver-center{
+
+.ver-center {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -154,7 +159,6 @@ h2 {
     background-color: transparent;
 }
 
-
 /* TYPER CSS */
 
 .typer {
@@ -189,29 +193,31 @@ h2 {
 .no-cursor::after {
     content: none;
 }
+
 /*  Footer -> */
 
-footer{
+footer {
     margin-top: 10px;
     max-width: 99vw;
 }
 
-#map{
-    max-width:400px;
-    height:350px;
-    background:rgb(247, 247, 242);
+#map {
+    max-width: 400px;
+    height: 350px;
+    background: rgb(247, 247, 242);
     border-radius: 10%;
-    border: 1px solid rgba(228, 221, 208 , .5);
+    border: 1px solid rgba(228, 221, 208, .5);
 }
 
-.planetafooter{
-    height: 500px;        
+.planetafooter {
+    height: 500px;
 }
 
-.drustvene-mreze{
+.drustvene-mreze {
     width: 50px !important;
 }
-.ubijme2{
+
+.ubijme2 {
     display: none;
 }
 
@@ -274,14 +280,17 @@ footer{
 .white-space {
     white-space: pre-wrap;
 }
-.zaprati a{
-color: #fff;
-transition: 0.5s;
+
+.zaprati a {
+    color: #fff;
+    transition: 0.5s;
 }
-.zaprati a:hover{
-text-decoration: none;
-color: #0575E6;
+
+.zaprati a:hover {
+    text-decoration: none;
+    color: #0575E6;
 }
+
 @-webkit-keyframes text-focus-in {
     0% {
         -webkit-filter: blur(9px);
@@ -398,59 +407,79 @@ color: #0575E6;
 }
 
 /*Tajmer*/
-#dani, #sati, #minuti, #sekunde {
+
+#dani,
+#sati,
+#minuti,
+#sekunde {
     text-align: center;
     font-size: 100px;
     font-family: 'Aldrich', sans-serif;
     color: white;
     margin: 0;
     padding: 0;
-  }
-  #sep{
+}
+
+#sep {
     font-size: 100px;
     font-family: 'Aldrich', sans-serif;
     color: white;
     margin: 0;
     padding: 0;
-  }
-
+}
 
 #tekst {
     padding-top: 0;
     margin-top: 0;
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 40px;
     font-family: 'Anonymous Pro', monospace;
     opacity: 0.5;
     margin: 0;
     padding: 0;
 }
-.days, .hours, .minutes, .seconds, #sep{
+
+.days,
+.hours,
+.minutes,
+.seconds,
+#sep {
     float: left;
 }
 
-.clear{
-    clear:both;
+.clear {
+    clear: both;
 }
 
-#sendbtn{
-background-color: #fff;
-outline: none;
-border: none;
-height: 35px;
-transition: 0.5s;
+#sendbtn {
+    background-color: #fff;
+    outline: none;
+    border: none;
+    height: 35px;
+    transition: 0.5s;
+}
 
+#mail-input {
+    height: 35px;
+    padding-left: 10px;
 }
-#mail-input{
-height: 35px;
-padding-left: 10px;
+
+#sendbtn:hover {
+    background-color: #0176fc;
+    color: #fff;
+    cursor: pointer;
 }
-#sendbtn:hover{
-background-color: #0176fc;
-color: #fff;
-cursor: pointer;
+#skip-loading{
+    position: fixed;
+    bottom: 6px;
+    right: 10px;
+    padding: 0 5px;
 }
+#skip-loading:hover{
+    cursor: pointer;
+}
+
 /* Prikaz samo za kompjutere */
 
 @media (min-width: 992px) {
@@ -516,42 +545,42 @@ cursor: pointer;
         margin: 0 auto;
         max-width: 400px;
     }
-    .logo{
-        margin-bottom: -22%;
+    .logo {
+        padding-top: 12%;
         width: 240px;
     }
     .container mt-5>row {
         background-color: #01000a;
     }
-    #dani, #sati, #minuti, #sekunde, #sep {        
+    #dani,
+    #sati,
+    #minuti,
+    #sekunde,
+    #sep {
         font-size: 30px;
     }
-        
-    #tekst{
+    #tekst {
         font-size: 11px;
     }
-    .timer>p{
+    .timer>p {
         padding: 0;
         margin: 0;
     }
-    .ubijme{
+    .ubijme {
         display: none;
-        }
+    }
     .ubijme2 {
         display: initial;
     }
-
     .planetafooter {
         max-width: 350px;
         max-height: 350px;
     }
-    #map{
+    #map {
         max-width: 85vw;
     }
-    footer .row{
+    footer .row {
         max-width: 99vw;
         padding-right: 0;
     }
-    
 }
-

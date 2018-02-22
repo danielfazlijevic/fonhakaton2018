@@ -60,15 +60,15 @@ function typingAnimation(){
         max: 350
     })
     .pause(500)
-    .line("25 TIMOVA")
+    .line("20 TIMOVA")
     .pause(200)
     .continue(' // ')
     .pause(300)
-    .continue('24 SATI')
+    .continue('24 SATA')
     .pause(300)
     .continue(' // ')
     .pause(300)
-    .continue('JEDAN POBEDNIČKI TIN')
+    .continue('DVA POBEDNIČKA TIN')
     .pause(300)
     .back(1)
     .continue('MA')
@@ -128,7 +128,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-var countDownDate = new Date("March 31, 2018 18:00:00").getTime();
+var countDownDate = new Date("March 31, 2018 16:00:00").getTime();
 
 var x = setInterval(function countdown() {
 
@@ -152,6 +152,10 @@ var x = setInterval(function countdown() {
         document.getElementById("demo").innerHTML = "Hakaton je počeo!";
     }
 }, 1000);
+
+
+
+
 
 function initMap() {
   var uluru = {lat: 44.772601, lng: 20.475168};
@@ -493,8 +497,11 @@ function initMap() {
         XHR.send(urlEncodedData);
       }
 
-if (localStorage.getItem("development")) {
+if (localStorage.getItem("development") == true) {
     hideLoading();
 }
 
-
+document.addEventListener('keydown', function(event) {
+  if(event.keyCode == 27) {
+     hideLoading();
+  }});
