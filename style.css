@@ -557,10 +557,11 @@ footer {
     #minuti,
     #sekunde,
     #sep {
-        font-size: 30px;
+        padding-top: 20px;
+        font-size: 40px;
     }
     #tekst {
-        font-size: 11px;
+        font-size: 15px;
     }
     .timer>p {
         padding: 0;
