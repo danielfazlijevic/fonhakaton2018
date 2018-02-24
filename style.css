@@ -272,6 +272,22 @@ h2 {
     background-color: transparent;
 }
 
+/*Youtube video*/
+.yt-video{
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.yt-video iframe {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 /*Robni sponzori*/
 
 .img-img {
@@ -494,6 +510,7 @@ footer {
     outline: none;
     font-size: 15px;
     transition: 0.4s;
+
 }
 
 .active,
@@ -616,6 +633,7 @@ footer {
     .accordion{
         margin-left: 50px;
     } 
+
 }
 
 /* Prikaz za tablete i telefone */
@@ -710,6 +728,7 @@ footer {
         width: 100%;
         overflow: auto;
     }
+
 }
 
 /*prikaz menija za ipad pro*/
