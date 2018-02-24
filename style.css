@@ -1,6 +1,118 @@
 
 /* PROBNI SAJT by Daniel Fazlijevic, januar 2018. #4b00d6  #9536d4*/
 
+.carousel-item img {
+    width: 100%;
+    height: 50%;
+	
+}
+
+
+#video{
+	 width: 100%;
+	 height: 90%;
+	
+}
+
+.carousel-item.active{
+	background-color: transparent;
+}
+#slider a:hover{
+	background-color: transparent;
+}
+
+
+#blur1{
+	text-align: center;
+	display: inline-block;
+	position:relative;
+}
+
+#blur1 img{
+	width: 150px;
+	height: 150px;;
+	border-radius: 4px;
+	transition: .3s;
+}
+
+#blur1:hover img{
+	filter: blur(2px) brightness(60%);
+}
+
+#blur1 :not(img){
+	position: absolute;
+	top: 30%;
+	right: 2%;
+	z-index: 1;
+	color: #fff;
+	width: 95%;
+	opacity: 0;
+	transition: .3s;
+}
+#blur1 h6{
+	top: 50%;
+}
+
+#blur1:hover :not(img){
+	opacity: 1;
+}
+#blur2{
+	text-align: center;
+	display: inline-block;
+	position:relative;
+}
+
+#blur2 img{
+	
+	width: 150px;
+	height: 150px;;
+	border-radius: 4px;
+	transition: .3s;
+}
+
+#blur2:hover img{
+	filter: blur(2px) brightness(60%);
+}
+
+#blur2 :not(img){
+	position: absolute;
+	top: 27%;
+	right: 1%;
+	z-index: 1;
+	color: #fff;
+	width: 95%;
+	opacity: 0;
+	transition: .3s;
+}
+#blur2 h6{
+	top: 60%;
+}
+
+#blur2:hover :not(img){
+	opacity: 1;
+}
+
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#onc:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.containerTab {
+    padding: 50px;
+    color: white;
+	display: none;
+	background: transparent;
+}
+
+
+
 body {
     background-color: #01000a;
     font-family: 'Anonymous Pro', monospace;
@@ -367,7 +479,7 @@ footer {
 .accordion {
     background-color: inherit;
     color: white;
-    border: solid #0575E6;
+    border: solid blue;
     cursor: pointer;
     padding: 15px;
     width: 60%;
@@ -416,7 +528,7 @@ footer {
 #minuti,
 #sekunde {
     text-align: center;
-    font-size: 75px;
+    font-size: 100px;
     font-family: 'Aldrich', sans-serif;
     color: white;
     margin: 0;
@@ -424,7 +536,7 @@ footer {
 }
 
 #sep {
-    font-size: 70px;
+    font-size: 100px;
     font-family: 'Aldrich', sans-serif;
     color: white;
     margin: 0;
@@ -436,7 +548,7 @@ footer {
     margin-top: 0;
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Anonymous Pro', monospace;
     opacity: 0.5;
     margin: 0;
@@ -539,10 +651,7 @@ footer {
         -webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         text-shadow: 0 0 15px #0176fc;
-        font-size: 24px;
-    }
-    .nav-link {
-        font-size: 14px;
+        font-size: 26px;
     }
     .opacity {
         opacity: 1;
@@ -563,10 +672,10 @@ footer {
     #minuti,
     #sekunde,
     #sep {
-        font-size: 40px;
+        font-size: 30px;
     }
     #tekst {
-        font-size: 15px;
+        font-size: 11px;
     }
     .timer>p {
         padding: 0;
@@ -586,14 +695,6 @@ footer {
     .accordion {
         width: 100%;
         overflow: auto;
-    }
-}
-
-/*prikaz menija za ipad pro*/
-
-@media(max-width: 1366px) {
-    .nav-link {
-        font-size: 15px;
     }
 }
 
