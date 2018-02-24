@@ -185,6 +185,16 @@ body:after {
     color: #fff;
 }
 
+.typeform-share{
+    color: black;
+    text-decoration: none;
+}
+.typeform-share:hover{
+    color: #fff;
+    text-decoration: none;
+
+}
+
 .orange-line {
     background-color: #0176fc;
     width: 14%;
