@@ -349,9 +349,11 @@ footer {
 }
 
 #map {
+    margin-top: 50px;
     min-width: 320px;
     max-width: 400px;
-    height: 350px;
+    height: 320px;
+    width: 320px;
     background: rgb(247, 247, 242);
     border: 1px solid rgba(228, 221, 208, .5);
 }
