@@ -484,7 +484,7 @@ function initMap() {
   });
     function sendData() {
         var XHR = new XMLHttpRequest();
-        var urlEncodedData = document.querySelector('#mail-input').trim().value;
+        var urlEncodedData = document.querySelector('#mail-input').value;
   
         XHR.addEventListener('load', function(event) {
           alert('Tvoj mejl je uspešno dodat u newsletter! Dobijaćes povremena obaveštenja o FON Hakatonu.');
