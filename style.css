@@ -272,6 +272,12 @@ h2 {
     background-color: transparent;
 }
 
+/*Robni sponzori*/
+
+.img-img {
+    border-radius: 10%;
+}
+
 /* TYPER CSS */
 
 .typer {
@@ -317,6 +323,7 @@ footer {
 }
 
 #map {
+    min-width: 320px;
     max-width: 400px;
     height: 350px;
     background: rgb(247, 247, 242);
@@ -606,6 +613,9 @@ footer {
         margin-top: -140px;
         margin-bottom: -5%;
     }
+    .accordion{
+        margin-left: 50px;
+    } 
 }
 
 /* Prikaz za tablete i telefone */
@@ -690,6 +700,7 @@ footer {
     }
     #map {
         max-width: 85vw;
+        min-width: 50vw;
     }
     footer .row {
         max-width: 99vw;
