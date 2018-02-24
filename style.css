@@ -367,7 +367,7 @@ footer {
 .accordion {
     background-color: inherit;
     color: white;
-    border: solid blue;
+    border: solid #0575E6;
     cursor: pointer;
     padding: 15px;
     width: 60%;
@@ -416,7 +416,7 @@ footer {
 #minuti,
 #sekunde {
     text-align: center;
-    font-size: 100px;
+    font-size: 75px;
     font-family: 'Aldrich', sans-serif;
     color: white;
     margin: 0;
@@ -424,7 +424,7 @@ footer {
 }
 
 #sep {
-    font-size: 100px;
+    font-size: 70px;
     font-family: 'Aldrich', sans-serif;
     color: white;
     margin: 0;
@@ -436,7 +436,7 @@ footer {
     margin-top: 0;
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Anonymous Pro', monospace;
     opacity: 0.5;
     margin: 0;
@@ -560,10 +560,10 @@ footer {
     #minuti,
     #sekunde,
     #sep {
-        font-size: 30px;
+        font-size: 40px;
     }
     #tekst {
-        font-size: 11px;
+        font-size: 15px;
     }
     .timer>p {
         padding: 0;
