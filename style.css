@@ -1,3 +1,4 @@
+
 /* PROBNI SAJT by Daniel Fazlijevic, januar 2018. #4b00d6  #9536d4*/
 
 body {
@@ -361,12 +362,14 @@ footer {
     z-index: -1;
 }
 
+/* FAQ */
+
 .accordion {
     background-color: inherit;
     color: white;
     border: solid blue;
     cursor: pointer;
-    padding: 10px;
+    padding: 15px;
     width: 60%;
     text-align: left;
     outline: none;
@@ -376,7 +379,7 @@ footer {
 
 .active,
 .accordion:hover {
-    background-color: rgb(114, 114, 201);
+    background-color: #0575E6;
 }
 
 .accordion:after {
@@ -394,7 +397,7 @@ footer {
 .panel {
     width: 60%;
     padding: 5px;
-    background-color: black;
+    background-color: inherit;
     max-height: 0;
     text-align: left;
     overflow: hidden;
@@ -402,7 +405,7 @@ footer {
 }
 
 .link2:hover {
-    background-color: rgb(114, 114, 201);
+    background-color: #0575E6;
     color: black;
 }
 
@@ -557,11 +560,10 @@ footer {
     #minuti,
     #sekunde,
     #sep {
-        padding-top: 20px;
-        font-size: 40px;
+        font-size: 30px;
     }
     #tekst {
-        font-size: 15px;
+        font-size: 11px;
     }
     .timer>p {
         padding: 0;
@@ -578,4 +580,10 @@ footer {
         max-width: 99vw;
         padding-right: 0;
     }
+    .accordion {
+        width: 100%;
+        overflow: auto;
+    }
 }
+
+
