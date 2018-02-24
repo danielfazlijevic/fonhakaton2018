@@ -1,3 +1,4 @@
+
 /* PROBNI SAJT by Daniel Fazlijevic, januar 2018. #4b00d6  #9536d4*/
 
 body {
@@ -557,11 +558,10 @@ footer {
     #minuti,
     #sekunde,
     #sep {
-        padding-top: 20px;
-        font-size: 40px;
+        font-size: 30px;
     }
     #tekst {
-        font-size: 15px;
+        font-size: 11px;
     }
     .timer>p {
         padding: 0;
@@ -578,4 +578,10 @@ footer {
         max-width: 99vw;
         padding-right: 0;
     }
+    .accordion {
+        width: 100%;
+        overflow: auto;
+    }
 }
+
+
