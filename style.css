@@ -347,9 +347,11 @@ footer {
 }
 
 .planetafooter {
-    height: 425px;
     padding-right: 0;
 
+}
+.planet-right-more{
+    right:14%;
 }
 
 .drustvene-mreze {
@@ -633,7 +635,7 @@ footer {
     .accordion{
         margin-left: 50px;
     } 
-
+    
 }
 
 /* Prikaz za tablete i telefone */
