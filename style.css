@@ -206,6 +206,10 @@ body:after {
     max-width: 300px;
 }
 
+#telekom {
+	margin-bottom: 0rem !important;
+}
+
 .partners-img--sm {
     max-height: 80px;
 }
@@ -287,7 +291,7 @@ h2 {
     position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
-	height: 0;
+    height: 0;
 }
 
 .yt-video iframe {
@@ -295,7 +299,8 @@ h2 {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+    height: 100%;
+    padding-bottom: 40px;
 }
 
 /*Robni sponzori*/
@@ -349,7 +354,7 @@ footer {
 }
 
 #map {
-    margin-top: 50px;
+    margin-top: 20px;
     min-width: 320px;
     max-width: 400px;
     height: 320px;
@@ -360,6 +365,8 @@ footer {
 
 .planetafooter {
     padding-right: 0;
+    width: 350px;
+    height: 350px;
 
 }
 .planet-right-more{
@@ -644,7 +651,7 @@ footer {
         margin-top: -140px;
         margin-bottom: -5%;
     }
-    .accordion{
+    .accordion, .panel{
         margin-left: 50px;
     } 
     
@@ -741,6 +748,12 @@ footer {
     .accordion {
         width: 100%;
         overflow: auto;
+    }
+    #telekom {
+        padding-bottom: 20px;
+    }
+    #fonis{
+        padding-bottom: 10px; 
     }
 
 }
