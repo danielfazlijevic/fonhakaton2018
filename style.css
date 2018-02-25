@@ -350,7 +350,7 @@ footer {
     margin-top: 10px;
     max-width: 99vw;
     padding-right: 0;
-
+    margin-bottom: 40px;
 }
 
 #map {
@@ -734,7 +734,8 @@ footer {
     }
 
     .planetafooter {
-        max-width: 85vw;        
+        max-width: 70vw; 
+        max-height: 70vw;       
     }
     #map {
         max-width: 85vw;
@@ -744,13 +745,17 @@ footer {
         max-width: 99vw;
         padding-right: 0;
     }
+    /*faq*/
     .accordion {
         width: 100%;
         overflow: auto;
     }
+    /*pokrovitelj*/
     #telekom {
         padding-bottom: 50px;
+        width: 100%;
     }
+    /*organizator*/
     #fonis{
         margin-bottom: 50px;
     }
