@@ -1,4 +1,117 @@
+
 /* PROBNI SAJT by Daniel Fazlijevic, januar 2018. #4b00d6  #9536d4*/
+
+.carousel-item img {
+    width: 100%;
+    height: 50%;
+	
+}
+
+
+#video{
+	 width: 100%;
+	 height: 90%;
+	
+}
+
+.carousel-item.active{
+	background-color: transparent;
+}
+#slider a:hover{
+	background-color: transparent;
+}
+
+
+#blur1{
+	text-align: center;
+	display: inline-block;
+	position:relative;
+}
+
+#blur1 img{
+	width: 150px;
+	height: 150px;;
+	border-radius: 4px;
+	transition: .3s;
+}
+
+#blur1:hover img{
+	filter: blur(2px) brightness(60%);
+}
+
+#blur1 :not(img){
+	position: absolute;
+	top: 30%;
+	right: 2%;
+	z-index: 1;
+	color: #fff;
+	width: 95%;
+	opacity: 0;
+	transition: .3s;
+}
+#blur1 h6{
+	top: 50%;
+}
+
+#blur1:hover :not(img){
+	opacity: 1;
+}
+#blur2{
+	text-align: center;
+	display: inline-block;
+	position:relative;
+}
+
+#blur2 img{
+	
+	width: 150px;
+	height: 150px;;
+	border-radius: 4px;
+	transition: .3s;
+}
+
+#blur2:hover img{
+	filter: blur(2px) brightness(60%);
+}
+
+#blur2 :not(img){
+	position: absolute;
+	top: 27%;
+	right: 1%;
+	z-index: 1;
+	color: #fff;
+	width: 95%;
+	opacity: 0;
+	transition: .3s;
+}
+#blur2 h6{
+	top: 60%;
+}
+
+#blur2:hover :not(img){
+	opacity: 1;
+}
+
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#onc:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.containerTab {
+    padding: 50px;
+    color: white;
+	display: none;
+	background: transparent;
+}
+
+
 
 body {
     background-color: #01000a;
@@ -72,6 +185,16 @@ body:after {
     color: #fff;
 }
 
+.typeform-share{
+    color: black;
+    text-decoration: none;
+}
+.typeform-share:hover{
+    color: #fff;
+    text-decoration: none;
+
+}
+
 .orange-line {
     background-color: #0176fc;
     width: 14%;
@@ -81,6 +204,10 @@ body:after {
 
 .partners-img {
     max-width: 300px;
+}
+
+#telekom {
+	margin-bottom: 0rem !important;
 }
 
 .partners-img--sm {
@@ -159,6 +286,29 @@ h2 {
     background-color: transparent;
 }
 
+/*Youtube video*/
+.yt-video{
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+    height: 0;
+}
+
+.yt-video iframe {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+}
+
+/*Robni sponzori*/
+
+.img-img {
+    border-radius: 10%;
+}
+
 /* TYPER CSS */
 
 .typer {
@@ -200,20 +350,26 @@ footer {
     margin-top: 10px;
     max-width: 99vw;
     padding-right: 0;
-
+    margin-bottom: 40px;
 }
 
 #map {
+    margin-top: 20px;
+    min-width: 320px;
     max-width: 400px;
-    height: 350px;
+    height: 320px;
+    width: 320px;
     background: rgb(247, 247, 242);
     border: 1px solid rgba(228, 221, 208, .5);
 }
 
 .planetafooter {
-    height: 425px;
     padding-right: 0;
-
+    width: 350px;
+    height: 350px;
+}
+.planet-right-more{
+    right:14%;
 }
 
 .drustvene-mreze {
@@ -361,22 +517,25 @@ footer {
     z-index: -1;
 }
 
+/* FAQ */
+
 .accordion {
     background-color: inherit;
     color: white;
-    border: solid blue;
+    border: solid #0575E6;
     cursor: pointer;
-    padding: 10px;
-    width: 60%;
+    padding: 15px;
+    width: 90%;
     text-align: left;
     outline: none;
     font-size: 15px;
     transition: 0.4s;
+
 }
 
 .active,
 .accordion:hover {
-    background-color: rgb(114, 114, 201);
+    background-color: #0575E6;
 }
 
 .accordion:after {
@@ -394,7 +553,7 @@ footer {
 .panel {
     width: 60%;
     padding: 5px;
-    background-color: black;
+    background-color: inherit;
     max-height: 0;
     text-align: left;
     overflow: hidden;
@@ -402,7 +561,7 @@ footer {
 }
 
 .link2:hover {
-    background-color: rgb(114, 114, 201);
+    background-color: #0575E6;
     color: black;
 }
 
@@ -413,7 +572,7 @@ footer {
 #minuti,
 #sekunde {
     text-align: center;
-    font-size: 100px;
+    font-size: 75px;
     font-family: 'Aldrich', sans-serif;
     color: white;
     margin: 0;
@@ -421,7 +580,7 @@ footer {
 }
 
 #sep {
-    font-size: 100px;
+    font-size: 70px;
     font-family: 'Aldrich', sans-serif;
     color: white;
     margin: 0;
@@ -433,7 +592,7 @@ footer {
     margin-top: 0;
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Anonymous Pro', monospace;
     opacity: 0.5;
     margin: 0;
@@ -491,6 +650,10 @@ footer {
         margin-top: -140px;
         margin-bottom: -5%;
     }
+    .accordion, .panel{
+        margin-left: 50px;
+    } 
+    
 }
 
 /* Prikaz za tablete i telefone */
@@ -536,7 +699,10 @@ footer {
         -webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         text-shadow: 0 0 15px #0176fc;
-        font-size: 26px;
+        font-size: 24px;
+    }
+    .nav-link {
+       font-size: 14px;
     }
     .opacity {
         opacity: 1;
@@ -557,10 +723,10 @@ footer {
     #minuti,
     #sekunde,
     #sep {
-        font-size: 30px;
+        font-size: 40px;
     }
     #tekst {
-        font-size: 11px;
+        font-size: 15px;
     }
     .timer>p {
         padding: 0;
@@ -568,13 +734,48 @@ footer {
     }
 
     .planetafooter {
-        max-width: 85vw;
+        max-width: 70vw; 
+        max-height: 70vw;       
     }
     #map {
         max-width: 85vw;
+        min-width: 50vw;
     }
     footer .row {
         max-width: 99vw;
         padding-right: 0;
     }
+    /*faq*/
+    .accordion {
+        width: 100%;
+        overflow: auto;
+    }
+    /*pokrovitelj*/
+    #telekom {
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    /*organizator*/
+    #fonis{
+        margin-bottom: 50px;
+    }
+        
+    
+
 }
+
+/*prikaz menija za ipad pro*/
+
+@media(max-width: 1366px) {
+    .nav-link {
+        font-size: 15px;
+    }
+    .logo {
+        width: 240px;
+        margin-top: -50px;
+    }
+
+}
+
+
+
