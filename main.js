@@ -57,8 +57,9 @@ typingAnimation();
 function typingAnimation(){
     typer('.stats', {
         min: 20,
-        max: 350
+        max: 100
     })
+    .listen("loadingend")
     .pause(500)
     .line("20 TIMOVA")
     .pause(200)
@@ -73,6 +74,26 @@ function typingAnimation(){
     .back(1)
     .continue('MA')
     .end();
+
+    
+    typer('.hak', {
+      min: 20,
+      max: 100
+     })
+    .listen("loadingend")
+   .pause(5000)
+   .line("Haka")
+   .pause(200)
+   .continue('ton')
+   .pause(300)
+   
+    .end();
+    
+    
+
+  
+  
+
 
 typer('.loadingtext', {
         min: 5,
@@ -89,6 +110,18 @@ typer('.loadingtext', {
     .emit('loadingtextend')
     .end();
 
+typer('.tech', {
+      min: 20,
+      max: 100
+     })
+     .listen("loadingend")
+     .pause(5100)
+     .line("Tech")
+     .pause(200)
+     .continue(' Challenge')
+     .pause(200)
+      .end();
+
 typer('#console', {
         min: 5,
         max: 22
@@ -104,11 +137,11 @@ typer('#console', {
     .line("Fun level: MAX")
     .line("Partner: Telekom ")
     .line("Loading complete.")
-    .pause(500)
+    .pause(100)
     .emit('loadingend')
-    .end(hideLoading); 
-
+    .end(hideLoading);     
 }
+
 
 
 var acc = document.getElementsByClassName("accordion");
@@ -467,7 +500,7 @@ function initMap() {
       }
     ]
   });
-  var imageLogo = 'haklogo.png';
+  var imageLogo = 'marker15.png';
   var marker = new google.maps.Marker({
     position: uluru,
     map: map,
@@ -503,5 +536,8 @@ if (localStorage.getItem("development") == true) {
 
 document.addEventListener('keydown', function(event) {
   if(event.keyCode == 27) {
-     hideLoading();
+
+
+hideLoading();
+
   }});
