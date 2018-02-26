@@ -76,18 +76,6 @@ function typingAnimation(){
     .end();
 
     
-    typer('.hak', {
-      min: 20,
-      max: 100
-     })
-    .listen("loadingend")
-   .pause(5000)
-   .line("Haka")
-   .pause(200)
-   .continue('ton')
-   .pause(300)
-   
-    .end();
     
     
 
@@ -110,17 +98,6 @@ typer('.loadingtext', {
     .emit('loadingtextend')
     .end();
 
-typer('.tech', {
-      min: 20,
-      max: 100
-     })
-     .listen("loadingend")
-     .pause(5100)
-     .line("Tech")
-     .pause(200)
-     .continue(' Challenge')
-     .pause(200)
-      .end();
 
 typer('#console', {
         min: 5,
