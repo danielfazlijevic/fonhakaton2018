@@ -209,7 +209,9 @@ body:after {
 #telekom {
 	margin-bottom: 0rem !important;
 }
-
+#kontakt{
+    font-weight: 700;
+}
 .partners-img--sm {
     max-height: 80px;
 }
