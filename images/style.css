@@ -1,0 +1,783 @@
+
+/* PROBNI SAJT by Daniel Fazlijevic, januar 2018. #4b00d6  #9536d4*/
+
+.carousel-item img {
+    width: 100%;
+    height: 50%;
+	
+}
+
+
+#video{
+	 width: 100%;
+	 height: 90%;
+	
+}
+
+.carousel-item.active{
+	background-color: transparent;
+}
+#slider a:hover{
+	background-color: transparent;
+}
+
+
+#blur1{
+	text-align: center;
+	display: inline-block;
+	position:relative;
+}
+
+#blur1 img{
+	width: 150px;
+	height: 150px;;
+	border-radius: 4px;
+	transition: .3s;
+}
+
+#blur1:hover img{
+	filter: blur(2px) brightness(60%);
+}
+
+#blur1 :not(img){
+	position: absolute;
+	top: 30%;
+	right: 2%;
+	z-index: 1;
+	color: #fff;
+	width: 95%;
+	opacity: 0;
+	transition: .3s;
+}
+#blur1 h6{
+	top: 50%;
+}
+
+#blur1:hover :not(img){
+	opacity: 1;
+}
+#blur2{
+	text-align: center;
+	display: inline-block;
+	position:relative;
+}
+
+#blur2 img{
+	
+	width: 150px;
+	height: 150px;;
+	border-radius: 4px;
+	transition: .3s;
+}
+
+#blur2:hover img{
+	filter: blur(2px) brightness(60%);
+}
+
+#blur2 :not(img){
+	position: absolute;
+	top: 27%;
+	right: 1%;
+	z-index: 1;
+	color: #fff;
+	width: 95%;
+	opacity: 0;
+	transition: .3s;
+}
+#blur2 h6{
+	top: 60%;
+}
+
+#blur2:hover :not(img){
+	opacity: 1;
+}
+
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#onc:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.containerTab {
+    padding: 50px;
+    color: white;
+	display: none;
+	background: transparent;
+}
+
+
+
+body {
+    background-color: #01000a;
+    font-family: 'Anonymous Pro', monospace;
+    color: #fff;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    line-height: 1.5;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body:after {
+    content: "";
+    background-image: url("images/graphy-dark.png");
+    opacity: 0.43;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+.nav-link {
+    border: 1px dashed transparent;
+    z-index: 99;
+}
+
+.hamburger-icon {
+    display: none;
+    color: #0176fc;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 99;
+}
+
+.about a {
+    color: #0176fc;
+}
+
+.about a:hover,
+.link:hover,#skip-loading:hover {
+    background-color: white;
+    color: black;
+}
+
+.thumbnail img {
+    max-width: 200px;
+}
+
+.btn-prijava {
+    background: #0575E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #021B79, #0575E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-prijava:hover {
+    -webkit-box-shadow: 0px 1px 20px rgba(54, 209, 220, 0.8);
+    box-shadow: 0px 1px 20px rgba(54, 209, 220, 0.8);
+    color: #fff;
+}
+
+.typeform-share{
+    color: black;
+    text-decoration: none;
+}
+.typeform-share:hover{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.orange-line {
+    background-color: #0176fc;
+    width: 14%;
+    float: left;
+    height: 2px;
+}
+
+.partners-img {
+    max-width: 300px;
+}
+
+#telekom {
+	margin-bottom: 0rem !important;
+}
+#kontakt{
+    font-weight: 700;
+}
+.partners-img--sm {
+    max-height: 80px;
+}
+
+.irc-img {
+    max-width: 200px;
+}
+
+.ver-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.3s;
+    transition: opacity 0.2s, -webkit-transform 0.3s;
+    -o-transition: transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s, -webkit-transform 0.3s;
+}
+
+.cl-effect-1 a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+#console {
+    font-size: 70%;
+}
+
+h2 {
+    font-family: monospace;
+}
+
+.text-muted2 {
+    color: rgba(69, 70, 67, 0.6);
+}
+
+.logo {
+    width: 350px;
+}
+
+.nav-colored {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.nav-transparent {
+    background-color: transparent;
+}
+
+/*Youtube video*/
+.yt-video{
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+    height: 0;
+}
+
+.yt-video iframe {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+}
+
+/*Robni sponzori*/
+
+.img-img {
+    border-radius: 10%;
+}
+
+/* TYPER CSS */
+
+.typer {
+    position: relative;
+    min-height: 2ex;
+}
+
+.typer::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 0.1em;
+    height: 1.1em;
+    background-color: currentColor;
+    margin-left: 0.1em;
+}
+
+.cursor-block::after {
+    width: 0.9ex;
+}
+
+.cursor-soft::after {
+    -webkit-animation: softblink 0.7s infinite;
+    animation: softblink 0.7s infinite;
+}
+
+.cursor-hard::after {
+    -webkit-animation: hardblink 0.7s infinite;
+    animation: hardblink 0.7s infinite;
+}
+
+.no-cursor::after {
+    content: none;
+}
+
+/*  Footer -> */
+
+footer {
+    margin-top: 10px;
+    max-width: 99vw;
+    padding-right: 0;
+    margin-bottom: 40px;
+}
+
+#map {
+    margin-top: 20px;
+    min-width: 320px;
+    max-width: 400px;
+    height: 320px;
+    width: 320px;
+    background: rgb(247, 247, 242);
+    border: 1px solid rgba(228, 221, 208, .5);
+}
+
+.planetafooter {
+    padding-right: 0;
+    width: 350px;
+    height: 350px;
+}
+.planet-right-more{
+    right:14%;
+}
+
+.drustvene-mreze {
+    width: 50px !important;
+}
+
+
+/* ^^^^Footer^^^^^ */
+
+@-webkit-keyframes softblink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes softblink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes hardblink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes hardblink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.white-space {
+    white-space: pre-wrap;
+}
+
+.zaprati a {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.zaprati a:hover {
+    text-decoration: none;
+    color: #0575E6;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(9px);
+        filter: blur(9px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(9px);
+        filter: blur(9px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.bg-planet {
+    width: 600px;
+    height: auto;
+    z-index: -1;
+    display: inline;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.planet-right {
+    right: 2%;
+}
+
+.jumbo {
+    background-image: url('images/galaksija-min.png');
+    background-size: cover;
+    padding-left: 200px;
+}
+
+.text-purple {
+    color: #0176fc !important;
+}
+
+.loading {
+    z-index: 99999;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    top: 0;
+    background: black;
+}
+
+.loading:after {
+    content: "";
+    background-image: url("images/graphy-dark.png");
+    opacity: 0.43;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+/* FAQ */
+
+.accordion {
+    background-color: inherit;
+    color: white;
+    border: solid #0575E6;
+    cursor: pointer;
+    padding: 15px;
+    width: 90%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+
+}
+
+.active,
+.accordion:hover {
+    background-color: #0575E6;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    width: 60%;
+    padding: 5px;
+    background-color: inherit;
+    max-height: 0;
+    text-align: left;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.link2:hover {
+    background-color: #0575E6;
+    color: black;
+}
+
+/*Tajmer*/
+
+#dani,
+#sati,
+#minuti,
+#sekunde {
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Aldrich', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#sep {
+    font-size: 70px;
+    font-family: 'Aldrich', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#tekst {
+    padding-top: 0;
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Anonymous Pro', monospace;
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds,
+#sep {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+#sendbtn {
+    background-color: #fff;
+    outline: none;
+    border: none;
+    height: 35px;
+    transition: 0.5s;
+}
+
+#mail-input {
+    height: 35px;
+    padding-left: 10px;
+}
+
+#sendbtn:hover {
+    background-color: #0176fc;
+    color: #fff;
+    cursor: pointer;
+}
+#skip-loading{
+    position: fixed;
+    bottom: 6px;
+    right: 10px;
+    padding: 0 5px;
+}
+#skip-loading:hover{
+    cursor: pointer;
+}
+
+/* Prikaz samo za kompjutere */
+
+@media (min-width: 992px) {
+    .jumbo {
+        padding-top: 10%;
+        padding-bottom: 2%;
+    }
+    .logo {
+        margin-top: -140px;
+        margin-bottom: -5%;
+    }
+    .accordion, .panel{
+        margin-left: 50px;
+    } 
+    
+}
+
+/* Prikaz za tablete i telefone */
+
+@media(max-width: 991px) {
+    .mainmenu {
+        z-index: 9996;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        display: none;
+        opacity: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.95);
+        font-size: 25px;
+        animation: fadeIn 0.4s;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        -webkit-animation: fadeIn 0.4s;
+        text-align: center;
+        padding-top: 33%;
+    }
+    .first-planet {
+        top: 38%;
+        padding: 60px;
+    }
+    .bg-planet {
+        max-width: 330px;
+    }
+    .loadingtext {
+        font-size: 2.5rem;
+    }
+    .hamburger-icon {
+        display: inline-block;
+        z-index: 10001;
+    }
+    .mainmenu a {
+        text-align: center;
+        -webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        text-shadow: 0 0 15px #0176fc;
+        font-size: 24px;
+    }
+    .nav-link {
+       font-size: 14px;
+    }
+    .opacity {
+        opacity: 1;
+    }
+    .mainmenu ul {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    .logo {
+        padding-top: 12%;
+        width: 240px;
+    }
+    .container mt-5>row {
+        background-color: #01000a;
+    }
+    #dani,
+    #sati,
+    #minuti,
+    #sekunde,
+    #sep {
+        font-size: 40px;
+    }
+    #tekst {
+        font-size: 15px;
+    }
+    .timer>p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .planetafooter {
+        max-width: 70vw; 
+        max-height: 70vw;       
+    }
+    #map {
+        max-width: 85vw;
+        min-width: 50vw;
+    }
+    footer .row {
+        max-width: 99vw;
+        padding-right: 0;
+    }
+    /*faq*/
+    .accordion {
+        width: 100%;
+        overflow: auto;
+    }
+    /*pokrovitelj*/
+    #telekom {
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    /*organizator*/
+    #fonis{
+        margin-bottom: 50px;
+    }
+        
+    
+
+}
+
+/*prikaz menija za ipad pro*/
+
+@media(max-width: 1366px) {
+    .nav-link {
+        font-size: 15px;
+    }
+    .logo {
+        width: 240px;
+        margin-top: -50px;
+    }
+
+}
+
+
+
