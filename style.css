@@ -1,95 +1,98 @@
-
 /* PROBNI SAJT by Daniel Fazlijevic, januar 2018. #4b00d6  #9536d4*/
 
 .carousel-item img {
     width: 100%;
     height: 50%;
-	
 }
 
 
-#video{
-	 width: 100%;
-	 height: 90%;
-	
+#video {
+    width: 100%;
+    height: 90%;
 }
 
-.carousel-item.active{
-	background-color: transparent;
+.carousel-item.active {
+    background-color: transparent;
 }
-#slider a:hover{
-	background-color: transparent;
+
+#slider a:hover {
+    background-color: transparent;
 }
 
 
-#blur1{
-	text-align: center;
-	display: inline-block;
-	position:relative;
+#blur1 {
+    text-align: center;
+    display: inline-block;
+    position: relative;
 }
 
-#blur1 img{
-	width: 150px;
-	height: 150px;;
-	border-radius: 4px;
-	transition: .3s;
+#blur1 img {
+    width: 150px;
+    height: 150px;
+    ;
+    border-radius: 4px;
+    transition: .3s;
 }
 
-#blur1:hover img{
-	filter: blur(2px) brightness(60%);
+#blur1:hover img {
+    filter: blur(2px) brightness(60%);
 }
 
-#blur1 :not(img){
-	position: absolute;
-	top: 30%;
-	right: 2%;
-	z-index: 1;
-	color: #fff;
-	width: 95%;
-	opacity: 0;
-	transition: .3s;
-}
-#blur1 h6{
-	top: 50%;
+#blur1 :not(img) {
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    z-index: 1;
+    color: #fff;
+    width: 95%;
+    opacity: 0;
+    transition: .3s;
 }
 
-#blur1:hover :not(img){
-	opacity: 1;
-}
-#blur2{
-	text-align: center;
-	display: inline-block;
-	position:relative;
+#blur1 h6 {
+    top: 50%;
 }
 
-#blur2 img{
-	
-	width: 150px;
-	height: 150px;;
-	border-radius: 4px;
-	transition: .3s;
+#blur1:hover :not(img) {
+    opacity: 1;
 }
 
-#blur2:hover img{
-	filter: blur(2px) brightness(60%);
+#blur2 {
+    text-align: center;
+    display: inline-block;
+    position: relative;
 }
 
-#blur2 :not(img){
-	position: absolute;
-	top: 27%;
-	right: 1%;
-	z-index: 1;
-	color: #fff;
-	width: 95%;
-	opacity: 0;
-	transition: .3s;
-}
-#blur2 h6{
-	top: 60%;
+#blur2 img {
+
+    width: 150px;
+    height: 150px;
+    ;
+    border-radius: 4px;
+    transition: .3s;
 }
 
-#blur2:hover :not(img){
-	opacity: 1;
+#blur2:hover img {
+    filter: blur(2px) brightness(60%);
+}
+
+#blur2 :not(img) {
+    position: absolute;
+    top: 27%;
+    right: 1%;
+    z-index: 1;
+    color: #fff;
+    width: 95%;
+    opacity: 0;
+    transition: .3s;
+}
+
+#blur2 h6 {
+    top: 60%;
+}
+
+#blur2:hover :not(img) {
+    opacity: 1;
 }
 
 .closebtn {
@@ -104,11 +107,12 @@
     display: table;
     clear: both;
 }
+
 .containerTab {
     padding: 50px;
     color: white;
-	display: none;
-	background: transparent;
+    display: none;
+    background: transparent;
 }
 
 
@@ -162,7 +166,8 @@ body:after {
 }
 
 .about a:hover,
-.link:hover,#skip-loading:hover {
+.link:hover,
+#skip-loading:hover {
     background-color: white;
     color: black;
 }
@@ -186,14 +191,14 @@ body:after {
     color: #fff;
 }
 
-.typeform-share{
+.typeform-share {
     color: black;
     text-decoration: none;
 }
-.typeform-share:hover{
+
+.typeform-share:hover {
     color: #fff;
     text-decoration: none;
-
 }
 
 .orange-line {
@@ -205,7 +210,7 @@ body:after {
 
 
 
-#kontakt{
+#kontakt {
     font-weight: 500;
 }
 
@@ -282,28 +287,36 @@ h2 {
     background-color: transparent;
 }
 
+
+
 /*Youtube video*/
-.yt-video{
+
+.yt-video {
     position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
     height: 0;
 }
 
 .yt-video iframe {
     position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
     padding-bottom: 40px;
 }
+
+
 
 /*Robni sponzori*/
 
 .img-img {
     border-radius: 10%;
 }
+
+
 
 /* TYPER CSS */
 
@@ -340,6 +353,8 @@ h2 {
     content: none;
 }
 
+
+
 /*  Footer -> */
 
 footer {
@@ -361,15 +376,17 @@ footer {
 
 .planetafooter {
     padding-right: 0;
-   
 }
-.planet-right-more{
-    right:14%;
+
+.planet-right-more {
+    right: 14%;
 }
 
 .drustvene-mreze {
     width: 50px !important;
 }
+
+
 
 
 /* ^^^^Footer^^^^^ */
@@ -512,6 +529,8 @@ footer {
     z-index: -1;
 }
 
+
+
 /* FAQ */
 
 .accordion {
@@ -525,7 +544,6 @@ footer {
     outline: none;
     font-size: 15px;
     transition: 0.4s;
-
 }
 
 .active,
@@ -559,6 +577,8 @@ footer {
     background-color: #0575E6;
     color: black;
 }
+
+
 
 /*Tajmer*/
 
@@ -624,15 +644,19 @@ footer {
     color: #fff;
     cursor: pointer;
 }
-#skip-loading{
+
+#skip-loading {
     position: fixed;
     bottom: 6px;
     right: 10px;
     padding: 0 5px;
 }
-#skip-loading:hover{
+
+#skip-loading:hover {
     cursor: pointer;
 }
+
+
 
 /* Prikaz samo za kompjutere */
 
@@ -645,11 +669,16 @@ footer {
         margin-top: -140px;
         margin-bottom: -5%;
     }
-    .accordion, .panel{
+    .accordion,
+    .panel {
         margin-left: 50px;
-    } 
-    
+    }
+    .robni-partneri img {
+        margin: 15px;
+    }
 }
+
+
 
 /* Prikaz za tablete i telefone */
 
@@ -697,7 +726,7 @@ footer {
         font-size: 24px;
     }
     .nav-link {
-       font-size: 14px;
+        font-size: 14px;
     }
     .opacity {
         opacity: 1;
@@ -729,8 +758,8 @@ footer {
     }
 
     .planetafooter {
-        max-width: 80vw; 
-        max-height: 80vw;       
+        max-width: 80vw;
+        max-height: 80vw;
     }
     #map {
         max-width: 85vw;
@@ -751,13 +780,24 @@ footer {
         width: 100%;
     }
     /*organizator*/
-    #fonis{
+    #fonis {
         margin-bottom: 50px;
     }
-        
-    
 
+    .mapa {
+        min-width: 100vw !important;
+        max-width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    #map {
+        min-width: 100vw !important;
+        max-width: 100vw;
+        border: 0;
+    }
 }
+
+
 
 /*prikaz menija za ipad pro*/
 
@@ -769,8 +809,4 @@ footer {
         width: 240px;
         margin-top: -50px;
     }
-
 }
-
-
-
