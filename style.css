@@ -115,8 +115,45 @@
     background: transparent;
 }
 
+.columns {
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 0;
+   
 
+  }
+  .left-div {
+    display: inline-block;
+    max-width: 500px;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 5px;
+    vertical-align: top;
+  }
+  .right-div {
+    display: inline-block;
+    max-width: 500px;
+    text-align: justify;
+    padding: 10px;
 
+    border-radius: 3px;
+    margin: 5px;
+  }
+.left-text,
+.right-text {
+  text-align: justify;
+}
+
+@media screen and (max-width: 800px) {
+  .left-div,
+  .right-div {
+    max-width: 95%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
 body {
     background-color: #01000a;
     font-family: 'Anonymous Pro', monospace;
@@ -162,7 +199,7 @@ body:after {
 
 
 .about a {
-    color: #0176fc;
+    color:lightblue;
 }
 
 .about a:hover,
@@ -497,7 +534,6 @@ footer {
 .planet-right {
     right: 2%;
 }
-
 .jumbo {
     background-image: url('images/galaksija-min.png');
     background-size: cover;
