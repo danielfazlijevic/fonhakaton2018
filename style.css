@@ -40,7 +40,7 @@
 
 #blur1 :not(img) {
     position: absolute;
-    top: 30%;
+    top: 27%;
     right: 2%;
     z-index: 1;
     color: #fff;
@@ -50,7 +50,7 @@
 }
 
 #blur1 h6 {
-    top: 50%;
+    top: 60%;
 }
 
 #blur1:hover :not(img) {
