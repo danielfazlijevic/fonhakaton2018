@@ -61,7 +61,7 @@ function typingAnimation(){
     })
     .listen("loadingend")
     .pause(500)
-    .line("20 TIMOVA")
+    .line("23 TIMOVA")
     .pause(200)
     .continue(' // ')
     .pause(300)
