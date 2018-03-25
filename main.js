@@ -138,7 +138,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-var countDownDate = new Date("March 31, 2018 16:00:00").getTime();
+var countDownDate = new Date("March 31, 2018 14:00:00").getTime();
 
 var x = setInterval(function countdown() {
 
