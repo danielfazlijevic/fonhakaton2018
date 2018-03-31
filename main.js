@@ -152,10 +152,11 @@ var x = setInterval(function countdown() {
         return (n < 10 ? "0" : "") + n;
     }
     
-    document.getElementById("dani").innerHTML = makeMeTwoDigits(days);
-    document.getElementById("sati").innerHTML = makeMeTwoDigits(hours);
-    document.getElementById("minuti").innerHTML = makeMeTwoDigits(minutes);
-    document.getElementById("sekunde").innerHTML = makeMeTwoDigits(seconds);
+    
+    document.getElementById("dani").innerHTML = "00";
+    document.getElementById("sati").innerHTML = "00";
+    document.getElementById("minuti").innerHTML = "00";
+    document.getElementById("sekunde").innerHTML = "00";
 
     if (distance < 0) {
         clearInterval(x);
