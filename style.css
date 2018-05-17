@@ -75,7 +75,7 @@
 	display: block;
 min-width: 65vw !important;	
 	margin: 0 auto;
-	
+	height: 45vh !important;
 }
 #blur2:hover img {
     filter: blur(2px) brightness(60%);
