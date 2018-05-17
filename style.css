@@ -72,8 +72,9 @@
     transition: .3s;
 }
 .issuuembed{
+	display: block;
 min-width: 65vw !important;	
-	
+	margin: 0 auto;
 	
 }
 #blur2:hover img {
