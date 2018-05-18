@@ -5,7 +5,6 @@
     height: 50%;
 }
 
-
 #video {
     width: 100%;
     height: 90%;
@@ -18,7 +17,6 @@
 #slider a:hover {
     background-color: transparent;
 }
-
 
 #blur1 {
     text-align: center;
@@ -64,19 +62,21 @@
 }
 
 #blur2 img {
-
     width: 150px;
     height: 150px;
     ;
     border-radius: 4px;
     transition: .3s;
 }
-.issuuembed{
-	display: block;
-min-width: 65vw !important;	
-	margin: 0 auto;
-	height: 45vh !important;
+
+.issuuembed {
+    display: block;
+    min-width: 65vw !important;
+    max-width: 80vw;
+    margin: 0 auto;
+    height: 45vh !important;
 }
+
 #blur2:hover img {
     filter: blur(2px) brightness(60%);
 }
@@ -125,10 +125,9 @@ min-width: 65vw !important;
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 0;
-   
+}
 
-  }
-  .left-div {
+.left-div {
     display: inline-block;
     max-width: 500px;
     text-align: justify;
@@ -136,29 +135,31 @@ min-width: 65vw !important;
     border-radius: 3px;
     margin: 5px;
     vertical-align: top;
-  }
-  .right-div {
+}
+
+.right-div {
     display: inline-block;
     max-width: 500px;
     text-align: justify;
     padding: 10px;
-
     border-radius: 3px;
     margin: 5px;
-  }
+}
+
 .left-text,
 .right-text {
-  text-align: justify;
+    text-align: justify;
 }
 
 @media screen and (max-width: 800px) {
-  .left-div,
-  .right-div {
-    max-width: 95%;
-    width: 100%;
-    box-sizing: border-box;
-  }
+    .left-div,
+    .right-div {
+        max-width: 95%;
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
+
 body {
     background-color: #01000a;
     font-family: 'Anonymous Pro', monospace;
@@ -202,9 +203,8 @@ body:after {
     z-index: 99;
 }
 
-
 .about a {
-    color:lightblue;
+    color: lightblue;
 }
 
 .about a:hover,
@@ -250,12 +250,9 @@ body:after {
     height: 2px;
 }
 
-
-
 #kontakt {
     font-weight: 500;
 }
-
 
 .irc-img {
     max-width: 200px;
@@ -329,15 +326,13 @@ h2 {
     background-color: transparent;
 }
 
-
-
 /*Youtube video*/
 
 .yt-video {
     position: relative;
     padding-bottom: 56.25%;
     /* 16:9 */
-	margin-bottom: 7px;
+    margin-bottom: 7px;
     height: 0;
 }
 
@@ -345,30 +340,26 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-	bottom: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
-	}
-
-#codes{
-	margin-top: 3%;
-	text-align: center;
 }
 
-#videoiigrica{
-	margin-top: 2%;
-	margin-bottom: 6%;
+#codes {
+    margin-top: 3%;
+    text-align: center;
 }
 
-
+#videoiigrica {
+    margin-top: 2%;
+    margin-bottom: 6%;
+}
 
 /*Robni sponzori*/
 
 .img-img {
     border-radius: 10%;
 }
-
-
 
 /* TYPER CSS */
 
@@ -405,8 +396,6 @@ h2 {
     content: none;
 }
 
-
-
 /*  Footer -> */
 
 footer {
@@ -437,9 +426,6 @@ footer {
 .drustvene-mreze {
     width: 50px !important;
 }
-
-
-
 
 /* ^^^^Footer^^^^^ */
 
@@ -549,6 +535,7 @@ footer {
 .planet-right {
     right: 2%;
 }
+
 .jumbo {
     background-image: url('images/galaksija-min.png');
     background-size: cover;
@@ -579,8 +566,6 @@ footer {
     position: fixed;
     z-index: -1;
 }
-
-
 
 /* FAQ */
 
@@ -628,8 +613,6 @@ footer {
     background-color: #0575E6;
     color: black;
 }
-
-
 
 /*Tajmer*/
 
@@ -707,8 +690,6 @@ footer {
     cursor: pointer;
 }
 
-
-
 /* Prikaz samo za kompjutere */
 
 @media (min-width: 992px) {
@@ -728,8 +709,6 @@ footer {
         margin: 15px;
     }
 }
-
-
 
 /* Prikaz za tablete i telefone */
 
@@ -807,7 +786,6 @@ footer {
         padding: 0;
         margin: 0;
     }
-
     .planetafooter {
         max-width: 80vw;
         max-height: 80vw;
@@ -834,7 +812,6 @@ footer {
     #fonis {
         margin-bottom: 50px;
     }
-
     .mapa {
         min-width: 100vw !important;
         max-width: 100vw;
@@ -848,8 +825,6 @@ footer {
     }
 }
 
-
-
 /*prikaz menija za ipad pro*/
 
 @media(max-width: 1366px) {
@@ -860,10 +835,10 @@ footer {
         width: 240px;
         margin-top: -50px;
     }
-	.yt-video{
-		margin-top: 10%;
-	}
-	#codes{
-		margin-top: 0;
-	}
+    .yt-video {
+        margin-top: 10%;
+    }
+    #codes {
+        margin-top: 0;
+    }
 }
